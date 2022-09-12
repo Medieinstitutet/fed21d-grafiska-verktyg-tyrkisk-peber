@@ -23,4 +23,4 @@ Planen är att köra måndag-fredag varje vecka med lite spelrum över helgen if
 - [Nikola Salamurovic](https://github.com/NikolaSalamurovic)
 - [David Funck](https://github.com/Denturion)
 - [Frida Planting](https://github.com/fplanting)
-  @andrenarvell
+- [André Narvell](https://github.com/AndreNarvell)
