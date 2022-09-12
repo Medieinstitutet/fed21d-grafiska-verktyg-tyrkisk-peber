@@ -20,7 +20,7 @@ Planen är att köra måndag-fredag varje vecka med lite spelrum över helgen if
 
 ## Underskrivet av
 
-@NikolaSalamurovic
+- [Nikola Salamurovic](https://github.com/NikolaSalamurovic)
 @Denturion
 @fplanting
 @andrenarvell
