@@ -1,5 +1,60 @@
+@mixin button {
+  width: 103px;
+  height: 48px;
+  border-radius: 10px;
+}
+
 body {
-  font-family: "Passion One", sans-serif;
   background-image: url(/assets/svg/background.svg);
   background-size: cover;
+}
+
+.cookie-banner {
+  z-index: 100;
+  position: fixed;
+  top: 60px;
+  font-family: $font-poppins;
+  background-color: $red-color;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem;
+  border-radius: 15px;
+  font-size: $font-base * 1.5;
+
+  .cookie-svg {
+    margin: 0.5rem;
+    width: 70px;
+    height: 70px;
+    background-image: url(/assets/svg/peber.svg);
+    background-size: cover;
+  }
+
+  .cookie-banner__heading {
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+    font-family: $font-passion;
+    font-size: $font-base * 2.7;
+  }
+  .cookie-banner__text {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: $font-base * 1.5;
+  }
+
+  .cookie-btn-wrap {
+    padding-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .cookie-btn__yes {
+      background-color: $yellow-color;
+      @include button();
+    }
+    .cookie-btn__no {
+      background-color: $red-color;
+      @include button();
+    }
+  }
 }

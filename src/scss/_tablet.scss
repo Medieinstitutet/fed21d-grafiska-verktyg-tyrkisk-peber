@@ -1,5 +1,44 @@
 body {
-    font-family: "Passion One", sans-serif;
-    background-image: url(/assets/svg/background.svg);
-    background-size: cover;
+  margin: 0;
+}
+
+.cookie-banner {
+  width: 700px;
+  height: 450px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  padding: 10px;
+  margin-top: -225px;
+  margin-left: -360px;
+
+  .cookie-svg {
+    margin: 1.2rem 0 0 0;
+    width: 90px;
+    height: 90px;
   }
+
+  .cookie-banner__heading {
+    margin: 2rem 0;
+  }
+
+  .cookie-banner__text {
+    padding: 2rem 0;
+  }
+
+  .cookie-btn-wrap {
+    padding-top: 2rem;
+    justify-content: space-around;
+
+    .cookie-btn__yes {
+      background-color: $yellow-color;
+      width: 133px;
+      height: 62px;
+    }
+    .cookie-btn__no {
+      background-color: $red-color;
+      width: 133px;
+      height: 62px;
+    }
+  }
+}
