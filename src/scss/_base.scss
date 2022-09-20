@@ -6,9 +6,11 @@
   cursor: pointer;
 }
 
-body {
+body,
+html {
   background-image: url(/assets/svg/background.svg);
   background-size: cover;
+  height: 100%;
 }
 
 /**checkbox**/
@@ -52,7 +54,10 @@ body {
   width: 100%;
   height: 100%;
   background-color: #000fa0;
-  top: -100%; left: 0; right: 0; bottom: 0;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
   transition: all 0.3s ease-in-out;
   nav {
     text-align: center;
@@ -69,9 +74,6 @@ body {
     }
   }
 }
-
-
-
 
 .cookie-banner {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -125,3 +127,77 @@ body {
   }
 }
 
+footer {
+  width: 100vw;
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-passion;
+  color: $base-color;
+
+  .social-links {
+    margin: 0 0 0 0.5rem;
+    display: flex;
+    align-items: flex-end;
+    i {
+      cursor: pointer;
+      padding: 0;
+      margin: 0 0.3rem;
+      font-size: $font-base * 1.5;
+    }
+  }
+
+  .form-sub {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5rem 0 0;
+
+    label {
+      font-size: 14px;
+    }
+
+    .sub-input {
+      height: 20px;
+      width: 210px;
+      background-color: $blue-color;
+      border: 1px $yellow-color solid;
+      border-radius: 3px;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        font-family: $font-poppins;
+        color: rgba(255, 255, 255, 0.75);
+        margin: 0;
+        padding: 0 0 0 5px;
+        background-color: $blue-color;
+        text-transform: uppercase;
+        font-size: 8px;
+        border: none;
+        width: 100%;
+      }
+
+      button {
+        width: 30px;
+        cursor: pointer;
+        background-color: $blue-color;
+        border-left: 1px solid $yellow-color;
+        border-right: none;
+        border-bottom: none;
+        border-top: none;
+        margin: 0;
+        padding: 0;
+
+        i {
+          color: $text-color;
+          width: 20px;
+          height: 17px;
+        }
+      }
+    }
+  }
+}
