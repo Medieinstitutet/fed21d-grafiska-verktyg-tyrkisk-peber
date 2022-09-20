@@ -1,3 +1,9 @@
+@mixin desktopBtn {
+  font-size: $font-base * 3;
+  width: 159px;
+  height: 74px;
+}
+
 body {
 
     font-family: "Passion One", sans-serif;
@@ -17,5 +23,46 @@ body {
   }
 
   margin: 0;
+}
+
+
+.cookie-banner {
+  width: 845px;
+  height: 532px;
+  top: 53%;
+  left: 50%;
+  margin-top: -225px;
+  margin-left: -420px;
+
+  .cookie-svg {
+    margin: 1rem;
+    width: 104px;
+    height: 97px;
+  }
+
+  .cookie-banner__heading {
+    font-size: $font-base * 6;
+    margin: 0;
+  }
+
+  .cookie-banner__text {
+    margin: 0;
+    padding: 0.5rem 0 0 0;
+    font-size: $font-base * 3;
+    letter-spacing: -0.05em;
+  }
+
+  .cookie-btn-wrap {
+    padding-top: 5rem;
+
+    .cookie-btn__yes {
+      background-color: $yellow-color;
+      @include desktopBtn();
+    }
+    .cookie-btn__no {
+      background-color: $red-color;
+      @include desktopBtn();
+    }
+  }
 }
 
