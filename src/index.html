@@ -6,10 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/style.css" />
     <link rel="stylesheet" href="scss/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passion+One&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!--Green socket CDN link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="js/script.js" defer></script>
-    <title>Document</title>
+    <title>Tyrkisk Peber</title>
   </head>
   <body>
+
     <input id="toggle" type="checkbox"></input>
     <label for="toggle" class="hamburger">
       <div class="hamburger-top"></div>
@@ -24,5 +33,16 @@
         <a href="#">KONTAKT</a>
       </nav>
     </div>
+
+    <section class="cookie-banner">
+      <div class="cookie-svg"></div>
+      <h3 class="cookie-banner__heading">Peber?</h3>
+      <p class="cookie-banner__text">Närå, men vill du ha kakor då?</p>
+      <div class="cookie-btn-wrap">
+        <button id="cookie-accept-btn" class="cookie-btn__yes">Ja</button>
+        <button id="cookie-reject-btn" class="cookie-btn__no">Nej</button>
+      </div>
+    </section>
+
   </body>
 </html>
