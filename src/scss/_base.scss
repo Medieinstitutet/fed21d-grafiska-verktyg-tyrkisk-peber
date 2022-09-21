@@ -1,15 +1,82 @@
-@mixin button {
+@mixin mobileBtn {
   width: 103px;
   height: 48px;
-  border-radius: 10px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  cursor: pointer;
 }
 
-body {
+body,
+html {
   background-image: url(/assets/svg/background.svg);
   background-size: cover;
+  height: 100%;
+}
+
+/**checkbox**/
+#toggle {
+  display: none;
+}
+/**Hamburger**/
+.hamburger {
+  position: absolute;
+  top: 5em;
+  right: 5%;
+  margin-top: -70px;
+  z-index: 5;
+  div {
+    width: 49px;
+    height: 7px;
+    border-radius: 3px;
+    background-color: #ffd707;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+/**Hamburger animations**/
+#toggle:checked + .hamburger .hamburger-top {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+#toggle:checked + .hamburger .hamburger-bottom {
+  opacity: 0;
+}
+#toggle:checked + .hamburger .hamburger-middle {
+  transform: rotate(45deg);
+  margin-top: -7px;
+}
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+}
+/**Nav Styles**/
+.nav {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000fa0;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+  nav {
+    text-align: center;
+    margin-top: 100px;
+    a {
+      position: relative;
+      text-decoration: none;
+      color: #ffd707;
+      font-size: 2em;
+      font-family: "Passion One", sans-serif;
+      display: inline-block;
+      margin-top: 1.25em;
+      letter-spacing: 1px;
+    }
+  }
 }
 
 .cookie-banner {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 100;
   position: fixed;
   top: 60px;
@@ -20,13 +87,13 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 1.2rem;
-  border-radius: 15px;
+  border-radius: 10px;
   font-size: $font-base * 1.5;
 
   .cookie-svg {
     margin: 0.5rem;
-    width: 70px;
-    height: 70px;
+    width: 68px;
+    height: 63px;
     background-image: url(/assets/svg/peber.svg);
     background-size: cover;
   }
@@ -35,9 +102,10 @@ body {
     font-weight: 400;
     margin: 0 0 1rem 0;
     font-family: $font-passion;
-    font-size: $font-base * 2.7;
+    font-size: $font-base * 2.5;
   }
   .cookie-banner__text {
+    font-weight: 400;
     margin: 1rem 0;
     text-align: center;
     font-size: $font-base * 1.5;
@@ -50,11 +118,86 @@ body {
     justify-content: space-between;
     .cookie-btn__yes {
       background-color: $yellow-color;
-      @include button();
+      @include mobileBtn();
     }
     .cookie-btn__no {
       background-color: $red-color;
-      @include button();
+      @include mobileBtn();
+    }
+  }
+}
+
+footer {
+  width: 100vw;
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-passion;
+  color: $base-color;
+
+  .social-links {
+    margin: 0 0 0 0.5rem;
+    display: flex;
+    align-items: flex-end;
+    i {
+      cursor: pointer;
+      padding: 0;
+      margin: 0 0.3rem;
+      font-size: $font-base * 1.5;
+    }
+  }
+
+  .form-sub {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5rem 0 0;
+
+    label {
+      font-size: 14px;
+    }
+
+    .sub-input {
+      height: 20px;
+      width: 210px;
+      background-color: $blue-color;
+      border: 1px $yellow-color solid;
+      border-radius: 3px;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        font-family: $font-poppins;
+        color: rgba(255, 255, 255, 0.75);
+        margin: 0;
+        padding: 0 0 0 5px;
+        background-color: $blue-color;
+        text-transform: uppercase;
+        font-size: 8px;
+        border: none;
+        width: 100%;
+      }
+
+      button {
+        width: 30px;
+        cursor: pointer;
+        background-color: $blue-color;
+        border-left: 1px solid $yellow-color;
+        border-right: none;
+        border-bottom: none;
+        border-top: none;
+        margin: 0;
+        padding: 0;
+
+        i {
+          color: $text-color;
+          width: 20px;
+          height: 17px;
+        }
+      }
     }
   }
 }
