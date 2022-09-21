@@ -1,7 +1,11 @@
+
+
 body {
   background-image: url(/assets/svg/background.svg);
   background-size: cover;
 }
+
+.cookie-banner {
 
 header {
   height: 70px;
@@ -93,12 +97,29 @@ header {
 .cookie-banner {
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
   z-index: 100;
   position: fixed;
   top: 60px;
   font-family: "Poppins", sans-serif;
   background-color: #e31f1d;
   margin: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+.cookie-banner .cookie-svg {
+  margin: 0.5rem;
+  width: 70px;
+  height: 70px;
+  background-image: url(/assets/svg/peber.svg);
+  background-size: cover;
+}
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,19 +144,34 @@ header {
   background-size: cover;
 }
 
+
 .cookie-banner .cookie-banner__heading {
   font-weight: 400;
   margin: 0 0 1rem 0;
   font-family: "Passion One", sans-serif;
+
+  font-size: 2.7rem;
+}
+.cookie-banner .cookie-banner__text {
+
   font-size: 2.5rem;
 }
 
 .cookie-banner .cookie-banner__text {
   font-weight: 400;
+
   margin: 1rem 0;
   text-align: center;
   font-size: 1.5rem;
 }
+
+.cookie-banner .cookie-btn-wrap {
+  padding-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .cookie-banner .cookie-btn-wrap {
   padding-top: 1rem;
@@ -152,15 +188,110 @@ header {
   background-color: #ffd707;
   width: 103px;
   height: 48px;
+
+  border-radius: 10px;
+}
+
   border-radius: 8px;
   border: 2px solid #000;
   cursor: pointer;
 }
 
+
 .cookie-banner .cookie-btn-wrap .cookie-btn__no {
   background-color: #e31f1d;
   width: 103px;
   height: 48px;
+
+  border-radius: 10px;
+}
+
+.product-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 27em;
+  width: 330px;
+  color: #FFD707;
+}
+
+.cards-section {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 37.6em;
+}
+
+.top-cards {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  bottom: 1.2em;
+}
+
+.left-card {
+  width: 140px;
+  height: 175px;
+  margin-right: 1px;
+  justify-content: center;
+  background-color: #FFD707;
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+}
+
+.right-card {
+  width: 140px;
+  height: 175px;
+  margin-left: 40px;
+  background-color: #000FA0;
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+}
+
+.bottom-cards {
+  display: flex;
+  position: relative;
+  top: 1.2em;
+  justify-content: center;
+}
+
+.leftBottom-card {
+  width: 140px;
+  height: 175px;
+  margin-right: 10px;
+  background-color: #000FA0;
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+}
+
+.rightBottom-card {
+  width: 140px;
+  height: 175px;
+  margin-left: 40px;
+  background-color: #FFD707;
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+}
+
+.product-img1 {
+  margin-left: 29px;
+  margin-top: 25px;
+}
+
+.product-img2 {
+  margin-left: 29px;
+  margin-top: 25px;
+}
+
+.product-img3 {
+  margin-left: 23px;
+  margin-top: 25px;
+}
+
+.product-img4 {
+  margin-left: 29px;
+  margin-top: 25px;
+=======
   border-radius: 8px;
   border: 2px solid #000;
   cursor: pointer;
@@ -259,10 +390,14 @@ footer .form-sub .sub-input button i {
   color: #000;
   width: 20px;
   height: 17px;
+
 }
 
 @media screen and (min-width: 768px) {
   body {
+
+    margin: 0;
+
     font-family: "Passion One", sans-serif;
     background-image: url(/assets/svg/background.svg);
     background-size: cover;
@@ -274,10 +409,14 @@ footer .form-sub .sub-input button i {
     position: absolute;
     width: 100%;
     height: 100%;
+
   }
   .cookie-banner {
     width: 700px;
     height: 450px;
+
+    position: fixed;
+
     top: 40%;
     left: 50%;
     padding: 10px;
@@ -286,20 +425,32 @@ footer .form-sub .sub-input button i {
   }
   .cookie-banner .cookie-svg {
     margin: 1.2rem 0 0 0;
+
+    width: 90px;
+    height: 90px;
+
     width: 88px;
     height: 81px;
+
   }
   .cookie-banner .cookie-banner__heading {
     margin: 2rem 0;
   }
   .cookie-banner .cookie-banner__text {
     padding: 2rem 0;
+
+  }
+  .cookie-banner .cookie-btn-wrap {
+    padding-top: 2rem;
+    justify-content: space-around;
+
     width: 551px;
   }
   .cookie-banner .cookie-btn-wrap {
     padding-top: 2rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+
   }
   .cookie-banner .cookie-btn-wrap .cookie-btn__yes {
     background-color: #ffd707;
@@ -312,6 +463,16 @@ footer .form-sub .sub-input button i {
     height: 62px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
+
+body,html{background-image:url(/assets/svg/background.svg);background-size:cover;height:100%}#toggle{display:none}.hamburger{position:absolute;top:5em;right:5%;margin-top:-70px;z-index:5}.hamburger div{width:49px;height:7px;border-radius:3px;background-color:#ffd707;margin-top:8px;transition:all .3s ease-in-out}#toggle:checked+.hamburger .hamburger-top{transform:rotate(-45deg);margin-top:25px}#toggle:checked+.hamburger .hamburger-bottom{opacity:0}#toggle:checked+.hamburger .hamburger-middle{transform:rotate(45deg);margin-top:-7px}#toggle:checked+.hamburger+.nav{top:0}.nav{position:absolute;width:100%;height:100%;background-color:#000fa0;top:-100%;left:0;right:0;bottom:0;transition:all .3s ease-in-out}.nav nav{text-align:center;margin-top:100px}.nav nav a{position:relative;text-decoration:none;color:#ffd707;font-size:2em;font-family:"Passion One",sans-serif;display:inline-block;margin-top:1.25em;letter-spacing:1px}.cookie-banner{box-shadow:4px 4px 4px rgba(0,0,0,.25);z-index:100;position:fixed;top:60px;font-family:"Poppins",sans-serif;background-color:#e31f1d;margin:1rem;display:flex;flex-direction:column;align-items:center;padding:1.2rem;border-radius:10px;font-size:1.5rem}.cookie-banner .cookie-svg{margin:.5rem;width:68px;height:63px;background-image:url(/assets/svg/peber.svg);background-size:cover}.cookie-banner .cookie-banner__heading{font-weight:400;margin:0 0 1rem 0;font-family:"Passion One",sans-serif;font-size:2.5rem}.cookie-banner .cookie-banner__text{font-weight:400;margin:1rem 0;text-align:center;font-size:1.5rem}.cookie-banner .cookie-btn-wrap{padding-top:1rem;width:100%;display:flex;justify-content:space-between}.cookie-banner .cookie-btn-wrap .cookie-btn__yes{background-color:#ffd707;width:103px;height:48px;border-radius:8px;border:2px solid #000;cursor:pointer}.cookie-banner .cookie-btn-wrap .cookie-btn__no{background-color:#e31f1d;width:103px;height:48px;border-radius:8px;border:2px solid #000;cursor:pointer}footer{width:100vw;position:absolute;bottom:15px;display:flex;justify-content:space-between;font-family:"Passion One",sans-serif;color:#fff}footer .social-links{margin:0 0 0 .5rem;display:flex;align-items:flex-end}footer .social-links i{cursor:pointer;padding:0;margin:0 .3rem;font-size:1.5rem}footer .form-sub{text-transform:uppercase;display:flex;flex-direction:column;align-items:center;margin:0 .5rem 0 0}footer .form-sub label{font-size:14px}footer .form-sub .sub-input{height:20px;width:210px;background-color:#000fa0;border:1px #ffd707 solid;border-radius:3px;padding:0;display:flex;justify-content:space-between}footer .form-sub .sub-input input{font-family:"Poppins",sans-serif;color:rgba(255,255,255,.75);margin:0;padding:0 0 0 5px;background-color:#000fa0;text-transform:uppercase;font-size:8px;border:none;width:100%}footer .form-sub .sub-input button{width:30px;cursor:pointer;background-color:#000fa0;border-left:1px solid #ffd707;border-right:none;border-bottom:none;border-top:none;margin:0;padding:0}footer .form-sub .sub-input button i{color:#000;width:20px;height:17px}@media screen and (min-width: 768px){body{font-family:"Passion One",sans-serif;background-image:url(/assets/svg/background.svg);background-size:cover}.nav{position:absolute;width:100%;height:100%}.cookie-banner{width:700px;height:450px;top:40%;left:50%;padding:10px;margin-top:-225px;margin-left:-360px}.cookie-banner .cookie-svg{margin:1.2rem 0 0 0;width:88px;height:81px}.cookie-banner .cookie-banner__heading{margin:2rem 0}.cookie-banner .cookie-banner__text{padding:2rem 0;width:551px}.cookie-banner .cookie-btn-wrap{padding-top:2rem;justify-content:space-around}.cookie-banner .cookie-btn-wrap .cookie-btn__yes{background-color:#ffd707;width:133px;height:62px}.cookie-banner .cookie-btn-wrap .cookie-btn__no{background-color:#e31f1d;width:133px;height:62px}}@media screen and (min-width: 1024px){body{font-family:"Passion One",sans-serif;background-image:url(/assets/svg/background.svg);background-size:cover}.nav{position:absolute;width:100%;height:50%}.nav a:hover{color:#fff}.cookie-banner{width:845px;height:532px;top:53%;left:50%;margin-top:-225px;margin-left:-420px}.cookie-banner .cookie-svg{margin:1rem;width:104px;height:97px}.cookie-banner .cookie-banner__heading{font-size:6rem;margin:0}.cookie-banner .cookie-banner__text{margin:0;padding:.5rem 0 0 0;font-size:3rem;letter-spacing:-0.05em}.cookie-banner .cookie-btn-wrap{padding-top:5rem}.cookie-banner .cookie-btn-wrap .cookie-btn__yes{background-color:#ffd707;font-size:3rem;width:159px;height:74px}.cookie-banner .cookie-btn-wrap .cookie-btn__no{background-color:#e31f1d;font-size:3rem;width:159px;height:74px}}/*# sourceMappingURL=style.css.map */
+
+
 
 @media screen and (min-width: 1024px) {
   body {
@@ -370,3 +531,4 @@ footer .form-sub .sub-input button i {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
