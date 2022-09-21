@@ -6,11 +6,13 @@
   cursor: pointer;
 }
 
-body,
-html {
+body {
   background-image: url(/assets/svg/background.svg);
   background-size: cover;
-  height: 100%;
+}
+
+.logo-svg {
+  background-image: url(/assets/svg/peber.svg);
 }
 
 /**checkbox**/
@@ -54,10 +56,7 @@ html {
   width: 100%;
   height: 100%;
   background-color: #000fa0;
-  top: -100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: -100%; left: 0; right: 0; bottom: 0;
   transition: all 0.3s ease-in-out;
   nav {
     text-align: center;
@@ -74,6 +73,9 @@ html {
     }
   }
 }
+
+
+
 
 .cookie-banner {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -125,6 +127,7 @@ html {
       @include mobileBtn();
     }
   }
+  display: none;
 }
 
 footer {
