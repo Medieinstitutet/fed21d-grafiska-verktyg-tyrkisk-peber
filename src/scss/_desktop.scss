@@ -60,3 +60,38 @@ body {
     }
   }
 }
+
+footer {
+  .social-links {
+    i {
+      font-size: $font-base * 3.5;
+      margin: 0 0.6rem;
+    }
+  }
+
+  .form-sub {
+    label {
+      font-size: $font-base * 2;
+    }
+
+    .sub-input {
+      height: 47px;
+      width: 493px;
+
+      input {
+        font-size: $font-base * 1.25;
+      }
+
+      button {
+        width: 70px;
+        height: 47px;
+
+        i {
+          font-size: $font-base * 2.5;
+          width: 70px;
+          height: 47px;
+        }
+      }
+    }
+  }
+}
