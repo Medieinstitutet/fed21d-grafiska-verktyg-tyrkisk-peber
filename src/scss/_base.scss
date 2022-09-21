@@ -11,8 +11,16 @@ body {
   background-size: cover;
 }
 
+header {
+  height: 70px;
+}
+
 .logo-svg {
-  background-image: url(/assets/svg/peber.svg);
+  background-image: url(/assets/svg/TP_logo.svg);
+  height: 61px;
+  width: 170px;
+  background-size: cover;
+  margin-left: 10px;
 }
 
 /**checkbox**/
