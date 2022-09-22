@@ -52,3 +52,37 @@ body {
     }
   }
 }
+
+footer {
+  .social-links {
+    i {
+      font-size: $font-base * 2.375;
+    }
+  }
+
+  .form-sub {
+    label {
+      font-size: $font-base * 1.25;
+    }
+
+    .sub-input {
+      height: 30px;
+      width: 315px;
+
+      input {
+        font-size: $font-base * 0.75;
+      }
+
+      button {
+        width: 45px;
+        height: 30px;
+
+        i {
+          font-size: $font-base * 1.5;
+          width: 45px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
