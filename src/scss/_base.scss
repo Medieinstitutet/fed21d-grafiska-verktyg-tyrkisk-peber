@@ -96,7 +96,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.2rem;
+  padding: 2rem;
   border-radius: 10px;
   font-size: $font-base * 1.5;
 
@@ -135,7 +135,7 @@ header {
       @include mobileBtn();
     }
   }
-  display: none;
+display: none;
 }
 
 footer {
@@ -213,81 +213,63 @@ footer {
   }
 }
 .product-text {
-  position: absolute;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto;
-  top: 27em;
-  width: 330px;
   color: #FFD707;
+  text-align: center;
+  font-family: $font-poppins;
   }
   .cards-section {
-  position: absolute;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto;
-  top: 37.6em;
+  display: flex;
+  flex-direction: column;
   }
   .top-cards {
   display: flex;
-  position: relative;
   justify-content: center;
-  bottom: 1.2em;
   }
   .left-card {
   width: 140px;
   height: 175px;
-  margin-right: 1px;
-  justify-content: center;
+  margin: 10px;
   background-color: #FFD707;
   box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-  
   }
   .right-card {
   width: 140px;
   height: 175px;
-  margin-left: 40px;
+  margin: 10px;
   background-color: #000FA0;
   box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-  
   }
   .bottom-cards {
-    display: flex;
-    // margin-top: 1.5em;
-    position: relative;
-    top: 1.2em;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
   }
   .leftBottom-card {
-      width: 140px;
-      height: 175px;
-      margin-right: 10px;
-      background-color: #000FA0;
-      box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-      }
-      .rightBottom-card {
-      width: 140px;
-      height: 175px;
-      margin-left: 40px;
-      background-color: #FFD707;
-      box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-      
-     }
+  width: 140px;
+  height: 175px;
+  margin: 10px;
+  background-color: #000FA0;
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+  }
+ .rightBottom-card {
+  width: 140px;
+  height: 175px;
+  margin: 10px;
+  background-color: #FFD707;
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+  }
   .product-img1 {
   margin-left: 29px;
   margin-top: 25px;
   }
   .product-img2 {
-    margin-left: 29px;
-    margin-top: 25px;
+  margin-left: 29px;
+  margin-top: 25px;
   }
   .product-img3 {
-    margin-left: 23px;
-    margin-top: 25px;
+  margin-left: 23px;
+  margin-top: 25px;
   }
-  .product-img4 {
-    margin-left: 29px;
-    margin-top: 25px;
-  }
+ .product-img4 {
+ margin-left: 29px;
+ margin-top: 25px;
+ }
