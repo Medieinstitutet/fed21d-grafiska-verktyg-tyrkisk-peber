@@ -219,24 +219,6 @@ footer {
   display: flex;
   flex-direction: column;
   }
-  .top-cards {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  top: 27em;
-  width: 330px;
-  color: #ffd707;
-}
-.cards-section {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  top: 37.6em;
-}
 .top-cards {
   display: flex;
   justify-content: center;
@@ -289,56 +271,3 @@ footer {
  margin-left: 29px;
  margin-top: 25px;
  }
- 
-.left-card {
-  width: 140px;
-  height: 175px;
-  margin-right: 1px;
-  justify-content: center;
-  background-color: #ffd707;
-  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-}
-.right-card {
-  width: 140px;
-  height: 175px;
-  margin-left: 40px;
-  background-color: #000fa0;
-  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-}
-.bottom-cards {
-  display: flex;
-  // margin-top: 1.5em;
-  position: relative;
-  top: 1.2em;
-  justify-content: center;
-}
-.leftBottom-card {
-  width: 140px;
-  height: 175px;
-  margin-right: 10px;
-  background-color: #000fa0;
-  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-}
-.rightBottom-card {
-  width: 140px;
-  height: 175px;
-  margin-left: 40px;
-  background-color: #ffd707;
-  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-}
-.product-img1 {
-  margin-left: 29px;
-  margin-top: 25px;
-}
-.product-img2 {
-  margin-left: 29px;
-  margin-top: 25px;
-}
-.product-img3 {
-  margin-left: 23px;
-  margin-top: 25px;
-}
-.product-img4 {
-  margin-left: 29px;
-  margin-top: 25px;
-}
