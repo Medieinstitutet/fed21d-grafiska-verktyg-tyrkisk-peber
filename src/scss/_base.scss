@@ -23,6 +23,51 @@ header {
   margin-left: 10px;
 }
 
+.txt-under-logo{
+  color: $base-color;
+  width: 295px;
+  height: 64px;
+  margin-left: -34px;
+  top: 82px;
+  font-family: $font-poppins;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+.too-hot-txt{
+  display: flex;
+  width: 126px;
+  height: 17px;
+  margin-left: 350px;
+  top: 160px;
+  font-style: normal;
+  font-family: $font-passion;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $yellow-color;
+}
+.tp-picture{
+  width: 116px;
+  height: 169px;
+  top: 184px;
+  margin-left: 350px;
+}
+.txt-beside-picture{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: $font-poppins;
+  width: 237px;
+  height: 86px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 18px;
+  margin-left: 100px;
+  margin-top: -50px;
+}
+
 /**checkbox**/
 #toggle {
   display: none;
