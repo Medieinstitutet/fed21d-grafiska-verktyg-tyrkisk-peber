@@ -2,16 +2,24 @@ window.addEventListener("load", (event) => {
   checkEmail();
 });
 
+let accBtn = document.getElementById("cookie-accept-btn");
+let rejBtn = document.getElementById("cookie-reject-btn");
+let cookieWrap = document.getElementById("cookie-wrap");
+
+accBtn.addEventListener("click", (e) => {
+  cookieWrap.style.display = "none";
+});
+rejBtn.addEventListener("click", (e) => {
+  cookieWrap.style.display = "none";
+});
+
 function checkEmail() {
   let input = document.getElementById("email-input");
   let btn = document.getElementById("email-btn");
-  // Regular expression to check if string is email
 
   input.value = "";
 
   input.addEventListener("change", (e) => {
-    //TODO - check regexExp for validation
-
     const regexExp =
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
