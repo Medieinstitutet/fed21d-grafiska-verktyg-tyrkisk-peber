@@ -87,6 +87,95 @@ body {
   }
 }
 
+.product-text {
+  color: #FFD707;
+  text-align: center;
+  font-family: $font-poppins;
+  font-size: 24px;
+  }
+  .cards-section {
+  display: flex;
+  flex-direction: column;
+  }
+.top-cards {
+  display: flex;
+  justify-content: center;
+  }
+  .left-card {
+  width: 245px;
+  height: 308px;
+  margin: 10px;
+  background-color: #FFD707;
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+  }
+  .right-card {
+  width: 245px;
+  height: 308px;
+  margin: 10px;
+  background-color: #000FA0;
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+  }
+  .bottom-cards {
+  display: flex;
+  justify-content: center;
+  }
+  .leftBottom-card {
+  width: 245px;
+  height: 308px;
+  margin: 10px;
+  background-color: #000FA0;
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+  }
+ .rightBottom-card {
+  width: 245px;
+  height: 308px;
+  margin: 10px;
+  background-color: #FFD707;
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+  }
+
+
+.product-img1 {
+  width: 156px;
+  height: 221px;
+  margin-left: 46px;
+  margin-top: 45px;
+  }
+  .product-img2 {
+  width: 156px;
+  height: 221px;
+  margin-left: 46px;
+  margin-top: 45px;
+  }
+  .product-img3 {
+  width: 156px;
+  height: 221px;
+  margin-left: 46px;
+  margin-top: 45px;
+  }
+ .product-img4 {
+ width: 156px;
+ height: 221px;
+ margin-left: 46px;
+ margin-top: 45px;
+ }
+ 
+//  width: 156px;
+// height: 221;
+// background-image: url(/assets/png/blå\ peber\ tablet.png);
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
   .social-links {
     i {
@@ -120,23 +209,3 @@ footer {
     }
   }
 }
-// .product-img1 {
-//   margin-left: 29px;
-//   margin-top: 25px;
-//   }
-//   .product-img2 {
-//   margin-left: 29px;
-//   margin-top: 25px;
-//   }
-//   .product-img3 {
-//   margin-left: 23px;
-//   margin-top: 25px;
-//   }
-//  .product-img4 {
-//  margin-left: 29px;
-//  margin-top: 25px;
-//  }
- 
-//  width: 156px;
-// height: 221;
-// background-image: url(/assets/png/blå\ peber\ tablet.png);
