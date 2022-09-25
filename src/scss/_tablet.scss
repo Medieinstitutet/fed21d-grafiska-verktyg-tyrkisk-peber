@@ -19,6 +19,7 @@ body {
   top: 134px;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 700;
 }
 .too-hot-txt{
   display: flex;
@@ -27,23 +28,25 @@ body {
   margin-left: 455px;
   top: 195px;
   font-size: 32px;
-  line-height: 35px;
+  line-height: 35.23px;
+  font-weight: 400;
 }
 .tp-picture{
-  display: flex;
   width: 232px;
   height: 338px;
-  margin-top: -60px;
+  margin-top: 239px;
   margin-left: 466px;
 }
 .txt-beside-picture{
-
+  display: flex;
+  justify-content: center;
   width: 387px;
   height: 137px;
   font-size: 20px;
   line-height: 30px;
   margin-left: 68px;
   margin-top: -180px;
+
 }
 
 .cookie-banner {
