@@ -1,5 +1,132 @@
+@mixin desktopBtn {
+  font-size: $font-base * 3;
+  width: 159px;
+  height: 74px;
+}
+
 body {
-    font-family: "Passion One", sans-serif;
-    background-image: url(/assets/svg/background.svg);
-    background-size: cover;
+  font-family: "Passion One", sans-serif;
+  background-image: url(/assets/svg/background.svg);
+  background-size: cover;
+}
+/**
+  Nav Styles
+  **/
+.nav {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  a:hover {
+    color: white;
   }
+}
+.txt-under-logo {
+  color: white;
+  width: 611px;
+  height: 141px;
+  margin-left: 414px;
+  top: -10px;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+}
+.too-hot-txt {
+  width: 505px;
+  height: 80px;
+  margin-left: 829px;
+  top: 351px;
+  font-size: 64px;
+  line-height: 70.46px;
+  font-weight: 400;
+}
+.tp-picture {
+  width: 447.58px;
+  height: 653.6px;
+  margin-top: 0px;
+  margin-left: 900px;
+}
+.txt-beside-picture {
+  display: flex;
+  justify-content: center;
+  width: 568px;
+  height: 320px;
+  font-size: 32px;
+  line-height: 48px;
+  margin-left: 201px;
+  margin-top: -180px;
+}
+
+.cookie-banner {
+  width: 845px;
+  height: 532px;
+  top: 53%;
+  left: 50%;
+  margin-top: -225px;
+  margin-left: -420px;
+
+  .cookie-svg {
+    margin: 1rem;
+    width: 104px;
+    height: 97px;
+  }
+
+  .cookie-banner__heading {
+    font-size: $font-base * 6;
+    margin: 0;
+  }
+
+  .cookie-banner__text {
+    margin: 0;
+    padding: 0.5rem 0 0 0;
+    font-size: $font-base * 3;
+    letter-spacing: -0.05em;
+  }
+
+  .cookie-btn-wrap {
+    padding-top: 5rem;
+
+    .cookie-btn__yes {
+      background-color: $yellow-color;
+      @include desktopBtn();
+    }
+    .cookie-btn__no {
+      background-color: $red-color;
+      @include desktopBtn();
+    }
+  }
+}
+
+footer {
+  .social-links {
+    i {
+      font-size: $font-base * 3.5;
+      margin: 0 0.6rem;
+    }
+  }
+
+  .form-sub {
+    label {
+      font-size: $font-base * 2;
+    }
+
+    .sub-input {
+      height: 47px;
+      width: 493px;
+
+      input {
+        font-size: $font-base * 1.25;
+      }
+
+      button {
+        width: 70px;
+        height: 47px;
+
+        i {
+          font-size: $font-base * 2.5;
+          width: 70px;
+          height: 47px;
+        }
+      }
+    }
+  }
+}

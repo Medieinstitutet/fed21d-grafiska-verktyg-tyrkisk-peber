@@ -1,5 +1,341 @@
+@mixin mobileBtn {
+  width: 103px;
+  height: 48px;
+  border-radius: 8px;
+  border: 2px solid $text-color;
+  cursor: pointer;
+}
+
 body {
-  font-family: "Passion One", sans-serif;
   background-image: url(/assets/svg/background.svg);
-  background-size: cover;
+  background-size: contain;
+}
+
+header {
+  .logo-svg {
+    background-image: url(/assets/svg/TP_logo.svg);
+    height: 61px;
+    width: 170px;
+    background-size: cover;
+    margin: $font-base;
+  }
+
+  .txt-under-logo {
+    color: $base-color;
+    width: 295px;
+    margin-left: -34px;
+    top: 82px;
+    font-family: $font-poppins;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  /**checkbox**/
+  #toggle {
+    display: none;
+  }
+  /**Hamburger**/
+  .hamburger {
+    position: absolute;
+    top: 5em;
+    right: 5%;
+    margin-top: -70px;
+    z-index: 5;
+    div {
+      width: 49px;
+      height: 7px;
+      border-radius: 3px;
+      background-color: $yellow-color;
+      margin-top: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  /**Hamburger animations**/
+  #toggle:checked + .hamburger .hamburger-top {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+  }
+  #toggle:checked + .hamburger .hamburger-bottom {
+    opacity: 0;
+  }
+  #toggle:checked + .hamburger .hamburger-middle {
+    transform: rotate(45deg);
+    margin-top: -7px;
+  }
+  #toggle:checked + .hamburger + nav {
+    top: 0;
+
+    .bg-shadow {
+      background-color: $text-color;
+      height: 100vh;
+      opacity: 50%;
+      margin-top: 15.5%;
+    }
+  }
+
+  nav {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 372px;
+    background-color: ($blue-color);
+    opacity: 4;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+
+    a {
+      position: relative;
+      text-decoration: none;
+      color: $yellow-color;
+      font-size: 32px;
+      font-family: $font-passion;
+      display: inline-block;
+      margin-top: 1.25em;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+main {
+  height: 100%;
+}
+
+// FRONT PAGE VIEW //
+.front-view {
+  display: flex;
+  margin: 0rem 1rem 4rem 1rem;
+
+  .txt-beside-picture {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    text-align: center;
+    color: $blue-color;
+    font-family: $font-poppins;
+    width: 237px;
+    height: 86px;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 18px;
+  }
+  .too-hot-txt {
+    display: flex;
+    width: 126px;
+    height: 17px;
+    font-style: normal;
+    font-family: $font-passion;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: $yellow-color;
+  }
+  .tp-picture {
+    width: 116px;
+    height: 169px;
+  }
+}
+
+// COOKIE BANNER//
+.cookie-banner {
+  box-shadow: 4px 4px 4px $color-shadow;
+  z-index: 100;
+  position: fixed;
+  top: 60px;
+  font-family: $font-poppins;
+  background-color: $red-color;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 10px;
+  font-size: $font-base * 1.5;
+
+  .cookie-svg {
+    margin: 0.5rem;
+    width: 68px;
+    height: 63px;
+    background-image: url(/assets/svg/peber.svg);
+    background-size: cover;
+  }
+
+  .cookie-banner__heading {
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+    font-family: $font-passion;
+    font-size: $font-base * 2.5;
+  }
+  .cookie-banner__text {
+    font-weight: 400;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: $font-base * 1.5;
+  }
+
+  .cookie-btn-wrap {
+    padding-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .cookie-btn__yes {
+      background-color: $yellow-color;
+      @include mobileBtn();
+    }
+    .cookie-btn__no {
+      background-color: $red-color;
+      @include mobileBtn();
+    }
+  }
+  display: none;
+}
+
+// CARDS //
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+
+  .product-text {
+    color: $yellow-color;
+    text-align: center;
+    font-family: $font-poppins;
+    font-size: 12px;
+  }
+  .top-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .left-card {
+      width: 140px;
+      height: 175px;
+      margin: 10px;
+      background-color: $yellow-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+    }
+    .product-img1 {
+      margin-left: 29px;
+      margin-top: 25px;
+    }
+    .right-card {
+      width: 140px;
+      height: 175px;
+      margin: 10px;
+      background-color: $blue-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+    }
+    .product-img2 {
+      margin-left: 29px;
+      margin-top: 25px;
+    }
+  }
+  .bottom-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .leftBottom-card {
+      width: 140px;
+      height: 175px;
+      margin: 10px;
+      background-color: $blue-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+    }
+    .product-img3 {
+      margin-left: 23px;
+      margin-top: 25px;
+    }
+    .rightBottom-card {
+      width: 140px;
+      height: 175px;
+      margin: 10px;
+      background-color: $yellow-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+    }
+    .product-img4 {
+      margin-left: 29px;
+      margin-top: 25px;
+    }
+  }
+}
+
+// FOOTER //
+footer {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-passion;
+  color: $base-color;
+
+  .social-links {
+    margin: 0 0 0 0.5rem;
+    display: flex;
+    align-items: flex-end;
+    i {
+      cursor: pointer;
+      padding: 0;
+      margin: 0 0.3rem;
+      font-size: $font-base * 1.5;
+    }
+  }
+  .form-sub {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5rem 0 0;
+
+    label {
+      font-size: 14px;
+    }
+
+    .sub-input {
+      height: 20px;
+      width: 210px;
+      background-color: $blue-color;
+      border: 1px $yellow-color solid;
+      border-radius: 3px;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        font-family: $font-poppins;
+        color: rgba(255, 255, 255, 0.75);
+        margin: 0;
+        padding: 0 0 0 5px;
+        background-color: $blue-color;
+        text-transform: uppercase;
+        font-size: $font-base * 0.5;
+        border: none;
+        width: 100%;
+      }
+
+      button {
+        width: 30px;
+        cursor: pointer;
+        background-color: $blue-color;
+        border-left: 1px solid $yellow-color;
+        border-right: none;
+        border-bottom: none;
+        border-top: none;
+        margin: 0;
+        padding: 0;
+
+        i {
+          color: $text-color;
+          width: 20px;
+          height: 17px;
+        }
+      }
+    }
+  }
 }

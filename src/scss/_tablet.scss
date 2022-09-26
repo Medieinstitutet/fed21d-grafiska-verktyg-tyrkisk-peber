@@ -1,5 +1,196 @@
 body {
-    font-family: "Passion One", sans-serif;
-    background-image: url(/assets/svg/background.svg);
-    background-size: cover;
+  font-family: "Passion One", sans-serif;
+  background-image: url(/assets/svg/background.svg);
+  background-size: cover;
+}
+/**
+  Nav Styles
+  **/
+.nav {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.txt-under-logo {
+  color: white;
+  width: 343px;
+  height: 141px;
+  margin-left: -14px;
+  top: 134px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.too-hot-txt {
+  display: flex;
+  width: 254px;
+  height: 80px;
+  margin-left: 455px;
+  top: 195px;
+  font-size: 32px;
+  line-height: 35.23px;
+  font-weight: 400;
+}
+.tp-picture {
+  width: 232px;
+  height: 338px;
+  margin-top: 239px;
+  margin-left: 466px;
+}
+.txt-beside-picture {
+  display: flex;
+  justify-content: center;
+  width: 387px;
+  height: 137px;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 68px;
+  margin-top: -180px;
+}
+
+.cookie-banner {
+  width: 700px;
+  height: 450px;
+  top: 40%;
+  left: 50%;
+  padding: 10px;
+  margin-top: -225px;
+  margin-left: -360px;
+
+  .cookie-svg {
+    margin: 1.2rem 0 0 0;
+    width: 88px;
+    height: 81px;
   }
+
+  .cookie-banner__heading {
+    margin: 2rem 0;
+  }
+
+  .cookie-banner__text {
+    padding: 2rem 0;
+    width: 551px;
+  }
+
+  .cookie-btn-wrap {
+    padding-top: 2rem;
+    justify-content: space-around;
+
+    .cookie-btn__yes {
+      background-color: $yellow-color;
+      width: 133px;
+      height: 62px;
+    }
+    .cookie-btn__no {
+      background-color: $red-color;
+      width: 133px;
+      height: 62px;
+    }
+  }
+}
+
+.product-text {
+  color: #ffd707;
+  text-align: center;
+  font-family: $font-poppins;
+  font-size: 24px;
+}
+.cards-section {
+  display: flex;
+  flex-direction: column;
+}
+.top-cards {
+  display: flex;
+  justify-content: center;
+}
+.left-card {
+  width: 245px;
+  height: 308px;
+  margin: 10px;
+  background-color: #ffd707;
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+}
+.right-card {
+  width: 245px;
+  height: 308px;
+  margin: 10px;
+  background-color: #000fa0;
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+}
+.bottom-cards {
+  display: flex;
+  justify-content: center;
+}
+.leftBottom-card {
+  width: 245px;
+  height: 308px;
+  margin: 10px;
+  background-color: #000fa0;
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+}
+.rightBottom-card {
+  width: 245px;
+  height: 308px;
+  margin: 10px;
+  background-color: #ffd707;
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+}
+
+.product-img1 {
+  width: 156px;
+  height: 221px;
+  margin-left: 46px;
+  margin-top: 45px;
+}
+.product-img2 {
+  width: 156px;
+  height: 221px;
+  margin-left: 46px;
+  margin-top: 45px;
+}
+.product-img3 {
+  width: 156px;
+  height: 221px;
+  margin-left: 46px;
+  margin-top: 45px;
+}
+.product-img4 {
+  width: 156px;
+  height: 221px;
+  margin-left: 46px;
+  margin-top: 45px;
+}
+
+footer {
+  .social-links {
+    i {
+      font-size: $font-base * 2.375;
+    }
+  }
+
+  .form-sub {
+    label {
+      font-size: $font-base * 1.25;
+    }
+
+    .sub-input {
+      height: 30px;
+      width: 315px;
+
+      input {
+        font-size: $font-base * 0.75;
+      }
+
+      button {
+        width: 45px;
+        height: 30px;
+
+        i {
+          font-size: $font-base * 1.5;
+          width: 45px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
