@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="SE-sv">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000fa0" />
     <link rel="stylesheet" href="scss/style.css" />
-    <link rel="stylesheet" href="scss/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,54 +25,106 @@
     <title>Tyrkisk Peber</title>
   </head>
   <body>
+    <!---------------------------------------------------->
+    <!---------------------HEADER------------------------->
+    <!---------------------------------------------------->
     <header>
       <div class="logo-svg"></div>
+      <h1 class="txt-under-logo">
+        Det självklara valet för alla<br />
+        salmiakälskare sedan 1977.
+      </h1>
+
       <input id="toggle" type="checkbox" />
       <label for="toggle" class="hamburger">
         <div class="hamburger-top"></div>
         <div class="hamburger-middle"></div>
         <div class="hamburger-bottom"></div>
       </label>
-      <div class="nav">
-        <nav>
-          <a href="#">HEM</a><br />
-          <a href="#">PRODUKTER</a><br />
-          <a href="#">OM OSS</a><br />
-          <a href="#">KONTAKT</a>
-        </nav>
-      </div>
+
+      <nav>
+        <a href="#">HEM</a><br />
+        <a href="#">PRODUKTER</a><br />
+        <a href="#">OM OSS</a><br />
+        <a href="#">KONTAKT</a>
+        <div class="bg-shadow"></div>
+      </nav>
     </header>
-    <section class="front-view">
-      <h1 class="txt-under-logo">Det självklara valet för alla<br> salmiakälskare sedan 1977.</h1>
-      <h2 class="too-hot-txt">TOO HOT TO HANDLE?</h2>
-      <img src="/assets/png/desktop-original.png" alt="turkisk peber photo" class="tp-picture">
-      <p class="txt-beside-picture">Tyrkisk peber original består av ett hårt salmiakskal som döljer en het kärna med salmiakpulver.</p>
-    </section>
-    <br><br>
-    <section class="cookie-banner" id="cookie-wrap">
-      <div class="cookie-svg"></div>
-      <h3 class="cookie-banner__heading">Peber?</h3>
-      <p class="cookie-banner__text">Närå, men vill du ha kakor då?</p>
-      <div class="cookie-btn-wrap">
-        <button id="cookie-accept-btn" class="cookie-btn__yes">Ja</button>
-        <button id="cookie-reject-btn" class="cookie-btn__no">Nej</button>
-      </div>
-    </section>
 
+    <!---------------------------------------------------->
+    <!---------------------FIRST-PAGE--------------------->
+    <!---------------------------------------------------->
 
-  
-<h3 class="product-text">Tryck på en produkt för att veta mer!</h3>
-<section class="cards-section">
-   <div class="top-cards">
-    <div class="left-card"><img class="product-img1" src="/assets/png/mörk blå peber mobile.png" alt="blue product"></div>
-    <div class="right-card"><img class="product-img2" src="/assets/png/röd peber mobile.png" alt="red product"></div>
-  </div>
-   <div class="bottom-cards">
-    <div class="leftBottom-card"><img class="product-img3" src="/assets/png/gul peber mobile.png" alt="yellow product"></div>
-    <div class="rightBottom-card"><img class="product-img4" src="/assets/png/blå peber mobile.png" alt="blue product"></div>
-   </div>
+    <main>
+      <section class="front-view">
+        <p class="txt-beside-picture">
+          Tyrkisk peber original består av ett hårt salmiakskal som döljer en
+          het kärna med salmiakpulver.
+        </p>
+        <div>
+          <h2 class="too-hot-txt">TOO HOT TO HANDLE?</h2>
+          <img
+            src="/assets/png/desktop-original.png"
+            alt="turkisk peber photo"
+            class="tp-picture"
+          />
+        </div>
+      </section>
 
-    </section>
+      <section class="cookie-banner" id="cookie-wrap">
+        <div class="cookie-svg"></div>
+        <h3 class="cookie-banner__heading">Peber?</h3>
+        <p class="cookie-banner__text">Närå, men vill du ha kakor då?</p>
+        <div class="cookie-btn-wrap">
+          <button id="cookie-accept-btn" class="cookie-btn__yes">Ja</button>
+          <button id="cookie-reject-btn" class="cookie-btn__no">Nej</button>
+        </div>
+      </section>
+
+      <!---------------------------------------------------->
+      <!---------------------CARD-PAGE---------------------->
+      <!---------------------------------------------------->
+
+      <section class="cards-section">
+        <h3 class="product-text">Tryck på en produkt för att få veta mer!</h3>
+        <div class="top-cards">
+          <div class="left-card">
+            <img
+              class="product-img1"
+              src="/assets/png/mörk blå peber mobile.png"
+              alt="blue product"
+            />
+          </div>
+          <div class="right-card">
+            <img
+              class="product-img2"
+              src="/assets/png/röd peber mobile.png"
+              alt="red product"
+            />
+          </div>
+        </div>
+        <div class="bottom-cards">
+          <div class="leftBottom-card">
+            <img
+              class="product-img3"
+              src="/assets/png/gul peber mobile.png"
+              alt="yellow product"
+            />
+          </div>
+          <div class="rightBottom-card">
+            <img
+              class="product-img4"
+              src="/assets/png/blå peber mobile.png"
+              alt="blue product"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!---------------------------------------------------->
+    <!--------------------FOOTER-------------------------->
+    <!---------------------------------------------------->
 
     <footer>
       <div class="social-links">
@@ -88,7 +140,7 @@
             placeholder="godisgris@example.com"
             id="email-input"
           />
-          <button type="submit" id="email-btn">
+          <button type="submit" id="email-btn" aria-label="button">
             <i class="fa-sharp fa-solid fa-paper-plane"></i>
           </button>
         </div>

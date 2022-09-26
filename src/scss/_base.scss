@@ -2,128 +2,100 @@
   width: 103px;
   height: 48px;
   border-radius: 8px;
-  border: 2px solid #000;
+  border: 2px solid $text-color;
   cursor: pointer;
 }
 
 body {
   background-image: url(/assets/svg/background.svg);
-  background-size: cover;
+  background-size: contain;
 }
 
 header {
-  height: 70px;
-}
-
-.logo-svg {
-  background-image: url(/assets/svg/TP_logo.svg);
-  height: 61px;
-  width: 170px;
-  background-size: cover;
-  margin-left: 10px;
-}
-
-.txt-under-logo{
-  color: $base-color;
-  width: 295px;
-  height: 64px;
-  margin-left: -34px;
-  top: 82px;
-  font-family: $font-poppins;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-}
-.too-hot-txt{
-  display: flex;
-  width: 126px;
-  height: 17px;
-  margin-left: 350px;
-  top: 160px;
-  font-style: normal;
-  font-family: $font-passion;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: $yellow-color;
-}
-.tp-picture{
-  width: 116px;
-  height: 169px;
-  top: 184px;
-  margin-left: 350px;
-}
-.txt-beside-picture{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-family: $font-poppins;
-  width: 237px;
-  height: 86px;
-  font-size: 12px;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 18px;
-  margin-left: 100px;
-  margin-top: -50px;
-}
-
-/**checkbox**/
-#toggle {
-  display: none;
-}
-/**Hamburger**/
-.hamburger {
-  position: absolute;
-  top: 5em;
-  right: 5%;
-  margin-top: -70px;
-  z-index: 5;
-  div {
-    width: 49px;
-    height: 7px;
-    border-radius: 3px;
-    background-color: #ffd707;
-    margin-top: 8px;
-    transition: all 0.3s ease-in-out;
+  .logo-svg {
+    background-image: url(/assets/svg/TP_logo.svg);
+    height: 61px;
+    width: 170px;
+    background-size: cover;
+    margin: $font-base;
   }
-}
-/**Hamburger animations**/
-#toggle:checked + .hamburger .hamburger-top {
-  transform: rotate(-45deg);
-  margin-top: 25px;
-}
-#toggle:checked + .hamburger .hamburger-bottom {
-  opacity: 0;
-}
-#toggle:checked + .hamburger .hamburger-middle {
-  transform: rotate(45deg);
-  margin-top: -7px;
-}
-#toggle:checked + .hamburger + .nav {
-  top: 0;
-}
-/**Nav Styles**/
-.nav {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: 50%( #000fa0), 50%( #0010a076);
-  opacity: 4;
-  top: -100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: all 0.3s ease-in-out;
+
+  .txt-under-logo {
+    color: $base-color;
+    width: 295px;
+    margin-left: -34px;
+    top: 82px;
+    font-family: $font-poppins;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  /**checkbox**/
+  #toggle {
+    display: none;
+  }
+  /**Hamburger**/
+  .hamburger {
+    position: absolute;
+    top: 5em;
+    right: 5%;
+    margin-top: -70px;
+    z-index: 5;
+    div {
+      width: 49px;
+      height: 7px;
+      border-radius: 3px;
+      background-color: $yellow-color;
+      margin-top: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  /**Hamburger animations**/
+  #toggle:checked + .hamburger .hamburger-top {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+  }
+  #toggle:checked + .hamburger .hamburger-bottom {
+    opacity: 0;
+  }
+  #toggle:checked + .hamburger .hamburger-middle {
+    transform: rotate(45deg);
+    margin-top: -7px;
+  }
+  #toggle:checked + .hamburger + nav {
+    top: 0;
+
+    .bg-shadow {
+      background-color: $text-color;
+      height: 100vh;
+      opacity: 50%;
+      margin-top: 15.5%;
+    }
+  }
+
   nav {
     text-align: center;
-    margin-top: 100px;
+    position: absolute;
+    width: 100%;
+    height: 372px;
+    background-color: ($blue-color);
+    opacity: 4;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+
     a {
       position: relative;
       text-decoration: none;
-      color: #ffd707;
+      color: $yellow-color;
       font-size: 32px;
-      font-family: "Passion One", sans-serif;
+      font-family: $font-passion;
       display: inline-block;
       margin-top: 1.25em;
       letter-spacing: 1px;
@@ -131,8 +103,49 @@ header {
   }
 }
 
+main {
+  height: 100%;
+}
+
+// FRONT PAGE VIEW //
+.front-view {
+  display: flex;
+  margin: 0rem 1rem 4rem 1rem;
+
+  .txt-beside-picture {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    text-align: center;
+    color: $blue-color;
+    font-family: $font-poppins;
+    width: 237px;
+    height: 86px;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 18px;
+  }
+  .too-hot-txt {
+    display: flex;
+    width: 126px;
+    height: 17px;
+    font-style: normal;
+    font-family: $font-passion;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: $yellow-color;
+  }
+  .tp-picture {
+    width: 116px;
+    height: 169px;
+  }
+}
+
+// COOKIE BANNER//
 .cookie-banner {
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px $color-shadow;
   z-index: 100;
   position: fixed;
   top: 60px;
@@ -181,13 +194,80 @@ header {
       @include mobileBtn();
     }
   }
-
-  // display: none;
-
-display: none;
-
+  display: none;
 }
 
+// CARDS //
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+
+  .product-text {
+    color: $yellow-color;
+    text-align: center;
+    font-family: $font-poppins;
+    font-size: 12px;
+  }
+  .top-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .left-card {
+      width: 140px;
+      height: 175px;
+      margin: 10px;
+      background-color: $yellow-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+    }
+    .product-img1 {
+      margin-left: 29px;
+      margin-top: 25px;
+    }
+    .right-card {
+      width: 140px;
+      height: 175px;
+      margin: 10px;
+      background-color: $blue-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+    }
+    .product-img2 {
+      margin-left: 29px;
+      margin-top: 25px;
+    }
+  }
+  .bottom-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .leftBottom-card {
+      width: 140px;
+      height: 175px;
+      margin: 10px;
+      background-color: $blue-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+    }
+    .product-img3 {
+      margin-left: 23px;
+      margin-top: 25px;
+    }
+    .rightBottom-card {
+      width: 140px;
+      height: 175px;
+      margin: 10px;
+      background-color: $yellow-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+    }
+    .product-img4 {
+      margin-left: 29px;
+      margin-top: 25px;
+    }
+  }
+}
+
+// FOOTER //
 footer {
   margin: 1rem;
   display: flex;
@@ -259,65 +339,3 @@ footer {
     }
   }
 }
-.product-text {
-  color: #FFD707;
-  text-align: center;
-  font-family: $font-poppins;
-  font-size: 12px;
-  }
-  .cards-section {
-  display: flex;
-  flex-direction: column;
-  }
-.top-cards {
-  display: flex;
-  justify-content: center;
-  }
-  .left-card {
-  width: 140px;
-  height: 175px;
-  margin: 10px;
-  background-color: #FFD707;
-  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-  }
-  .right-card {
-  width: 140px;
-  height: 175px;
-  margin: 10px;
-  background-color: #000FA0;
-  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-  }
-  .bottom-cards {
-  display: flex;
-  justify-content: center;
-  }
-  .leftBottom-card {
-  width: 140px;
-  height: 175px;
-  margin: 10px;
-  background-color: #000FA0;
-  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-  }
- .rightBottom-card {
-  width: 140px;
-  height: 175px;
-  margin: 10px;
-  background-color: #FFD707;
-  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-  }
-  .product-img1 {
-  margin-left: 29px;
-  margin-top: 25px;
-  }
-  .product-img2 {
-  margin-left: 29px;
-  margin-top: 25px;
-  }
-  .product-img3 {
-  margin-left: 23px;
-  margin-top: 25px;
-  }
- .product-img4 {
- margin-left: 29px;
- margin-top: 25px;
- }

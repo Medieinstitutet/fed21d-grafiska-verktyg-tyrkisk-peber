@@ -11,8 +11,8 @@ body {
   width: 100%;
   height: 100%;
 }
-.txt-under-logo{
-  color:white;
+.txt-under-logo {
+  color: white;
   width: 343px;
   height: 141px;
   margin-left: -14px;
@@ -21,7 +21,7 @@ body {
   line-height: 24px;
   font-weight: 700;
 }
-.too-hot-txt{
+.too-hot-txt {
   display: flex;
   width: 254px;
   height: 80px;
@@ -31,13 +31,13 @@ body {
   line-height: 35.23px;
   font-weight: 400;
 }
-.tp-picture{
+.tp-picture {
   width: 232px;
   height: 338px;
   margin-top: 239px;
   margin-left: 466px;
 }
-.txt-beside-picture{
+.txt-beside-picture {
   display: flex;
   justify-content: center;
   width: 387px;
@@ -46,7 +46,6 @@ body {
   line-height: 30px;
   margin-left: 68px;
   margin-top: -180px;
-
 }
 
 .cookie-banner {
@@ -91,93 +90,76 @@ body {
 }
 
 .product-text {
-  color: #FFD707;
+  color: #ffd707;
   text-align: center;
   font-family: $font-poppins;
   font-size: 24px;
-  }
-  .cards-section {
+}
+.cards-section {
   display: flex;
   flex-direction: column;
-  }
+}
 .top-cards {
   display: flex;
   justify-content: center;
-  }
-  .left-card {
+}
+.left-card {
   width: 245px;
   height: 308px;
   margin: 10px;
-  background-color: #FFD707;
+  background-color: #ffd707;
   box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-  }
-  .right-card {
+}
+.right-card {
   width: 245px;
   height: 308px;
   margin: 10px;
-  background-color: #000FA0;
+  background-color: #000fa0;
   box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-  }
-  .bottom-cards {
+}
+.bottom-cards {
   display: flex;
   justify-content: center;
-  }
-  .leftBottom-card {
+}
+.leftBottom-card {
   width: 245px;
   height: 308px;
   margin: 10px;
-  background-color: #000FA0;
+  background-color: #000fa0;
   box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-  }
- .rightBottom-card {
+}
+.rightBottom-card {
   width: 245px;
   height: 308px;
   margin: 10px;
-  background-color: #FFD707;
+  background-color: #ffd707;
   box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
-  }
-
+}
 
 .product-img1 {
   width: 156px;
   height: 221px;
   margin-left: 46px;
   margin-top: 45px;
-  }
-  .product-img2 {
+}
+.product-img2 {
   width: 156px;
   height: 221px;
   margin-left: 46px;
   margin-top: 45px;
-  }
-  .product-img3 {
+}
+.product-img3 {
   width: 156px;
   height: 221px;
   margin-left: 46px;
   margin-top: 45px;
-  }
- .product-img4 {
- width: 156px;
- height: 221px;
- margin-left: 46px;
- margin-top: 45px;
- }
- 
-//  width: 156px;
-// height: 221;
-// background-image: url(/assets/png/blå\ peber\ tablet.png);
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.product-img4 {
+  width: 156px;
+  height: 221px;
+  margin-left: 46px;
+  margin-top: 45px;
+}
 
 footer {
   .social-links {
