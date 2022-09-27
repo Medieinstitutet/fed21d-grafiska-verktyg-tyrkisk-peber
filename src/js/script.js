@@ -2,17 +2,26 @@ window.addEventListener("load", (event) => {
   checkEmail();
 });
 
+let menuBtn = document.getElementById("menu-button");
 let accBtn = document.getElementById("cookie-accept-btn");
 let rejBtn = document.getElementById("cookie-reject-btn");
 let cookieWrap = document.getElementById("cookie-wrap");
 
+//OPEN NAV
+menuBtn.addEventListener("click", (e) => {
+  menuBtn.classList.toggle("menu-open");
+});
+
+//ACCEPT COOKIES
 accBtn.addEventListener("click", (e) => {
   cookieWrap.style.display = "none";
 });
+//REJECT COOKIES
 rejBtn.addEventListener("click", (e) => {
   cookieWrap.style.display = "none";
 });
 
+//CHANGE BG ON BUTTON, VALIDATION EMAIL
 function checkEmail() {
   let input = document.getElementById("email-input");
   let btn = document.getElementById("email-btn");

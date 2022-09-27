@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="sv" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Tyrkisk peber lakrits godis" />
+    <meta name="keywords" content="candy, licorice" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000fa0" />
     <link rel="stylesheet" href="scss/style.css" />
@@ -19,7 +21,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--Green socket CDN link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="js/script.js" defer></script>
     <title>Tyrkisk Peber</title>
@@ -35,19 +36,27 @@
         salmiakälskare sedan 1977.
       </h1>
 
-      <input id="toggle" type="checkbox" />
-      <label for="toggle" class="hamburger">
-        <div class="hamburger-top"></div>
-        <div class="hamburger-middle"></div>
-        <div class="hamburger-bottom"></div>
-      </label>
+      <div class="burger-wrap" id="menu-button">
+        <div class="burger"></div>
+        <div class="burger"></div>
+        <div class="burger"></div>
+      </div>
 
-      <nav>
-        <a href="#">HEM</a><br />
-        <a href="#">PRODUKTER</a><br />
-        <a href="#">OM OSS</a><br />
-        <a href="#">KONTAKT</a>
-        <div class="bg-shadow"></div>
+      <nav class="nav-content">
+        <ul class="content-wrap">
+          <li>
+            <a href="#">HEM</a>
+          </li>
+          <li>
+            <a href="#">PRODUKTER</a>
+          </li>
+          <li>
+            <a href="#">OM OSS</a>
+          </li>
+          <li>
+            <a href="#">KONTAKT</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -65,7 +74,7 @@
           <h2 class="too-hot-txt">TOO HOT TO HANDLE?</h2>
           <img
             src="/assets/png/desktop-original.png"
-            alt="turkisk peber photo"
+            alt="tyrkisk peber photo"
             class="tp-picture"
           />
         </div>
@@ -91,14 +100,14 @@
           <div class="left-card">
             <img
               class="product-img1"
-              src="/assets/png/mörk blå peber mobile.png"
+              src="/assets/png/dark-blue-peber-mobile.png"
               alt="blue product"
             />
           </div>
           <div class="right-card">
             <img
               class="product-img2"
-              src="/assets/png/röd peber mobile.png"
+              src="/assets/png/red-peber-mobile.png"
               alt="red product"
             />
           </div>
@@ -107,14 +116,14 @@
           <div class="leftBottom-card">
             <img
               class="product-img3"
-              src="/assets/png/gul peber mobile.png"
+              src="/assets/png/yellow-peber-mobile.png"
               alt="yellow product"
             />
           </div>
           <div class="rightBottom-card">
             <img
               class="product-img4"
-              src="/assets/png/blå peber mobile.png"
+              src="/assets/png/blue-peber-mobile.png"
               alt="blue product"
             />
           </div>
@@ -133,7 +142,7 @@
         <i class="fa-brands fa-facebook"></i>
       </div>
       <form class="form-sub">
-        <label for="subscription">Prenumerera på vårat nyhetsbrev?</label>
+        <label for="email-input">Prenumerera på vårat nyhetsbrev?</label>
         <div class="sub-input">
           <input
             type="text"
