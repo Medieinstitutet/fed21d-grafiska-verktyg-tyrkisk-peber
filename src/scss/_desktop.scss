@@ -9,53 +9,66 @@ body {
   background-image: url(/assets/svg/background.svg);
   background-size: cover;
 }
-/**
-  Nav Styles
-  **/
-.nav {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  a:hover {
-    color: white;
+// HEADER //
+header {
+  .logo-svg {
+    height: 101px;
+    width: 278px;
+  }
+  .txt-under-logo {
+    width: 611px;
+    margin-left: 25rem;
+    margin-top: -100px;
+    font-size: 32px;
+    line-height: 48px;
+
+  }
+  .burger-wrap {
+    top: 2rem;
+    .burger {
+      width: 96px;
+      height: 13px;
+      margin: 3px 10px;
+    }
+  }
+  .content-wrap {
+    li {
+      a:hover {
+        color: white;
+      }
+    }
   }
 }
-.txt-under-logo {
-  color: white;
-  width: 611px;
-  height: 141px;
-  margin-left: 414px;
-  top: -10px;
-  font-size: 32px;
-  line-height: 48px;
-  font-weight: 700;
-}
-.too-hot-txt {
-  width: 505px;
-  height: 80px;
-  margin-left: 829px;
-  top: 351px;
-  font-size: 64px;
-  line-height: 70.46px;
-  font-weight: 400;
-}
-.tp-picture {
-  width: 447.58px;
-  height: 653.6px;
-  margin-top: 0px;
-  margin-left: 900px;
-}
-.txt-beside-picture {
-  display: flex;
-  justify-content: center;
-  width: 568px;
-  height: 320px;
-  font-size: 32px;
-  line-height: 48px;
-  margin-left: 201px;
-  margin-top: -180px;
+.menu-open ~ .nav-content {
+  width: 100%;
 }
 
+// FRONT PAGE VIEW //
+.front-view {
+  margin: 10rem 5rem 20rem 15rem;
+
+  .txt-beside-picture {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    text-align: center;
+    width: 540px;
+    height: 200px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .too-hot-txt {
+    width: 505px;
+    height: 80px; 
+    font-size: 64px;
+    line-height: 150px;
+  }
+  .tp-picture {
+    width: 448px;
+    height: 654px;
+  }
+}
+///COOKIE BANNER///
 .cookie-banner {
   width: 845px;
   height: 532px;
