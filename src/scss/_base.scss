@@ -7,8 +7,8 @@
 }
 
 body {
-  background-image: url(/assets/svg/background.svg);
-  background-size: contain;
+  background-image: url(/src/assets/svg/background.svg);
+  background-size: cover;
 }
 
 // HEADER //
@@ -18,7 +18,7 @@ header {
   }
 
   .logo-svg {
-    background-image: url(/assets/svg/TP_logo.svg);
+    background-image: url(/src/assets/svg/TP_logo.svg);
     height: 61px;
     width: 170px;
     background-size: cover;
@@ -194,7 +194,8 @@ main {
     margin: 0.5rem;
     width: 68px;
     height: 63px;
-    background-image: url(/assets/svg/peber.svg);
+    // background-image: url(/src/assets/svg/peber.svg);
+    background-image: url(/src/assets/svg/peber.svg);
     background-size: cover;
   }
 

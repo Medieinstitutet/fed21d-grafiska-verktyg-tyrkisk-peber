@@ -4,11 +4,11 @@
   height: 74px;
 }
 
-body {
-  font-family: "Passion One", sans-serif;
-  background-image: url(/assets/svg/background.svg);
-  background-size: cover;
-}
+// body {
+//   font-family: "Passion One", sans-serif;
+//   background-image: url(/assets/svg/background.svg);
+//   background-size: cover;
+// }
 // HEADER //
 header {
   .logo-svg {
@@ -21,7 +21,6 @@ header {
     margin-top: -100px;
     font-size: 32px;
     line-height: 48px;
-
   }
   .burger-wrap {
     top: 2rem;
@@ -59,7 +58,7 @@ header {
   }
   .too-hot-txt {
     width: 505px;
-    height: 80px; 
+    height: 80px;
     font-size: 64px;
     line-height: 150px;
   }
