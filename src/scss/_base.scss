@@ -190,6 +190,17 @@ main {
   border-radius: 10px;
   font-size: $font-base * 1.5;
 
+  .fire-svg {
+    width: 68px;
+    height: 63px;
+    background-image: url(/src/assets/svg/fire.svg);
+    background-size: cover;
+    transform: rotatez(45deg);
+    position: absolute;
+    z-index: 0;
+    
+  }
+
   .cookie-svg {
     margin: 0.5rem;
     width: 68px;
