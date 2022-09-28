@@ -1,8 +1,8 @@
 // body {
-//   font-family: "Passion One", sans-serif;
 //   background-image: url(/assets/svg/background.svg);
 //   background-size: cover;
 // }
+
 // HEADER //
 header {
   .logo-svg {
@@ -57,8 +57,8 @@ header {
     height: 338px;
   }
 }
-///COOKIE BANNER///
 
+//COOKIE BANNER//
 .cookie-banner {
   width: 700px;
   height: 450px;
@@ -173,8 +173,11 @@ header {
   }
 }
 
+// FOOTER //
 footer {
   .social-links {
+    margin-bottom: 0;
+
     i {
       font-size: $font-base * 2.375;
     }
@@ -186,22 +189,12 @@ footer {
     }
 
     .sub-input {
-      height: 30px;
       width: 315px;
 
-      input {
-        font-size: $font-base * 0.75;
-      }
-
       button {
-        width: 45px;
-        height: 30px;
-
-        i {
-          font-size: $font-base * 1.5;
-          width: 45px;
-          height: 30px;
-        }
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0; //prevent shrink
       }
     }
   }
