@@ -230,6 +230,17 @@ main {
   font-size: 1.5rem;
 }
 
+.cookie-banner .fire-svg {
+  width: 68px;
+  height: 63px;
+  background-image: url(/src/assets/svg/fire.svg);
+  background-size: cover;
+  -webkit-transform: rotatez(45deg);
+          transform: rotatez(45deg);
+  position: absolute;
+  z-index: 0;
+}
+
 .cookie-banner .cookie-svg {
   margin: 0.5rem;
   width: 68px;
