@@ -1,29 +1,29 @@
-body {
-  font-family: "Passion One", sans-serif;
-  background-image: url(/assets/svg/background.svg);
-  background-size: cover;
-}
+// body {
+//   font-family: "Passion One", sans-serif;
+//   background-image: url(/assets/svg/background.svg);
+//   background-size: cover;
+// }
 // HEADER //
 header {
   .logo-svg {
     height: 101px;
     width: 278px;
   }
-  .txt-under-logo { 
+  .txt-under-logo {
     width: 343px;
     margin-left: -20px;
     top: 82px;
     font-size: 16px;
     line-height: 24px;
   }
-.burger-wrap {
-  top: 2rem;
+  .burger-wrap {
+    top: 2rem;
     .burger {
       width: 96px;
       height: 13px;
     }
   }
-   
+
   /**Hamburger animations**/
   .burger-wrap.menu-open .burger:nth-child(1) {
     transform: rotate(45deg);
@@ -172,7 +172,6 @@ header {
     }
   }
 }
-
 
 footer {
   .social-links {
