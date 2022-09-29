@@ -1,0 +1,401 @@
+@mixin mobileBtn {
+  width: 103px;
+  height: 48px;
+  border-radius: 8px;
+  border: 2px solid $text-color;
+  cursor: pointer;
+}
+
+body {
+  background-image: url(../assets/svg/background-mobile.svg);
+  background-size: cover;
+}
+
+// HEADER //
+header {
+  nav {
+    display: none;
+  }
+
+  .logo-svg {
+    background-image: url(../assets/svg/TP_logo.svg);
+    height: 61px;
+    width: 170px;
+    background-size: cover;
+    margin: $font-base;
+  }
+
+  .txt-under-logo {
+    color: $base-color;
+    width: 295px;
+    margin-left: -34px;
+    top: 82px;
+    font-family: $font-poppins;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .burger-wrap {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    margin: 0;
+    z-index: 5;
+    cursor: pointer;
+
+    .burger {
+      position: relative;
+      padding: 0;
+      width: 49px;
+      height: 7px;
+      border-radius: 3px;
+      background-color: $yellow-color;
+      margin: 3px 0;
+      transform: rotate(0deg);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  /**Hamburger animations**/
+  .burger-wrap .burger:nth-child(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  .burger-wrap .burger:nth-child(2) {
+    top: 4px;
+    transform-origin: left center;
+  }
+  .burger-wrap .burger:nth-child(3) {
+    top: 8px;
+    transform-origin: left center;
+  }
+  .burger-wrap.menu-open .burger:nth-child(1) {
+    transform: rotate(45deg);
+    top: 3px;
+    margin: 0;
+  }
+  .burger-wrap.menu-open .burger:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  .burger-wrap.menu-open .burger:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 16.5px;
+    margin: 0;
+  }
+
+  .content-wrap {
+    background-color: $blue-color;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 372px;
+    width: 100vw;
+    margin-top: 1rem;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0.8rem 0;
+
+      a {
+        text-decoration: none;
+        color: $yellow-color;
+        font-size: 32px;
+        font-family: $font-passion;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+// MENU OPEN //
+.menu-open ~ .nav-content {
+  animation: fadeBg 0.25s ease-in-out;
+  display: block;
+  position: fixed;
+  background: #00000066;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vh;
+}
+
+@keyframes fadeBg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main {
+  height: 100%;
+}
+
+// FRONT PAGE VIEW //
+.front-view {
+  display: flex;
+  margin: 0rem 1rem 4rem 1rem;
+
+  .txt-beside-picture {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    text-align: center;
+    color: $blue-color;
+    font-family: $font-poppins;
+    width: 237px;
+    height: 86px;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 18px;
+  }
+
+  .too-hot-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .too-hot-txt {
+      display: flex;
+      width: 126px;
+      height: 17px;
+      font-style: normal;
+      font-family: $font-passion;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      color: $yellow-color;
+    }
+    .tp-picture {
+      width: 116px;
+      height: 169px;
+    }
+  }
+}
+
+// COOKIE BANNER//
+.cookie-banner {
+  box-shadow: 4px 4px 4px $color-shadow;
+  z-index: 100;
+  position: fixed;
+  top: 60px;
+  font-family: $font-poppins;
+  background-color: $red-color;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 10px;
+  font-size: $font-base * 1.5;
+
+  .fire-svg {
+    width: 68px;
+    height: 63px;
+    background-image: url(../assets/svg/fire.svg);
+    background-size: cover;
+    transform: rotatez(45deg);
+    position: absolute;
+    z-index: 0;
+  }
+
+  .cookie-svg {
+    margin: 0.5rem;
+    width: 68px;
+    height: 63px;
+    background-image: url(../assets/svg/peber.svg);
+    background-size: cover;
+  }
+
+  .cookie-banner-heading {
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+    font-family: $font-passion;
+    font-size: $font-base * 2.5;
+  }
+  .cookie-banner-text {
+    font-weight: 400;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: $font-base * 1.5;
+  }
+
+  .cookie-btn-wrap {
+    padding-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .cookie-btn-yes {
+      background-color: $yellow-color;
+      @include mobileBtn();
+    }
+    .cookie-btn-no {
+      background-color: $red-color;
+      @include mobileBtn();
+    }
+  }
+
+  //display: none;
+}
+
+// CARDS //
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  margin-top: 7rem;
+
+  .product-text {
+    color: $yellow-color;
+    text-align: center;
+    font-family: $font-poppins;
+    font-size: 12px;
+  }
+  .top-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .left-card {
+      width: 140px;
+      height: 175px;
+      margin: 10px;
+      background-color: $yellow-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+    }
+    .product-img1 {
+      width: 89px;
+      height: 127px;
+      margin-left: 26px;
+      margin-top: 25px;
+    }
+    .right-card {
+      width: 140px;
+      height: 175px;
+      margin: 10px;
+      background-color: $blue-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+    }
+    .product-img2 {
+      width: 89px;
+      height: 127px;
+      margin-left: 26px;
+      margin-top: 25px;
+    }
+  }
+  .bottom-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .leftBottom-card {
+      width: 140px;
+      height: 175px;
+      margin: 10px;
+      background-color: $blue-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+    }
+    .product-img3 {
+      width: 89px;
+      height: 127px;
+      margin-left: 26px;
+      margin-top: 25px;
+    }
+    .rightBottom-card {
+      width: 140px;
+      height: 175px;
+      margin: 10px;
+      background-color: $yellow-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+    }
+    .product-img4 {
+      width: 89px;
+      height: 127px;
+      margin-left: 26px;
+      margin-top: 25px;
+    }
+  }
+}
+
+// FOOTER //
+footer {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-passion;
+  color: $base-color;
+
+  .social-links {
+    margin: 0 0 0.7rem 0.5rem;
+    display: flex;
+    align-items: flex-end;
+
+    i {
+      cursor: pointer;
+      padding: 0;
+      margin: 0 0.3rem;
+      font-size: $font-base * 1.5;
+    }
+  }
+  .form-sub {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5rem 0 0;
+
+    label {
+      font-size: 14px;
+    }
+
+    .sub-input {
+      width: 210px;
+      background-color: $blue-color;
+      border: 1px $yellow-color solid;
+      border-radius: 3px;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        font-family: $font-poppins;
+        color: rgba(255, 255, 255, 0.75);
+        margin: 0;
+        padding: 0 0 0 5px;
+        background-color: $blue-color;
+        text-transform: uppercase;
+        font-size: $font-base * 0.7;
+        border: none;
+        width: 100%;
+        height: 48px; //min size for mobile
+      }
+
+      button {
+        width: 48px; //min size for mobile
+        height: 48px; //min size for mobile
+        cursor: pointer;
+        background-color: $blue-color;
+        border-left: 1px solid $yellow-color;
+        border-right: none;
+        border-bottom: none;
+        border-top: none;
+        margin: 0;
+        padding: 10px;
+        flex-shrink: 0;
+
+        i {
+          font-size: $font-base * 1.5;
+          color: $text-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,254 @@
+@mixin desktopBtn {
+  font-size: $font-base * 3;
+  width: 159px;
+  height: 74px;
+}
+
+body {
+  background-image: url(../assets/svg/background_1920.svg);
+}
+
+// HEADER //
+header {
+  .logo-svg {
+    height: 101px;
+    width: 278px;
+  }
+  .txt-under-logo {
+    width: 611px;
+    margin-left: 25rem;
+    margin-top: -100px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .burger-wrap {
+    top: 2rem;
+    .burger {
+      width: 96px;
+      height: 13px;
+      margin: 3px 10px;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+    }
+  }
+  .content-wrap {
+    height: 645px;
+    li {
+      a {
+        font-size: $font-base * 4;
+      }
+
+      a:hover {
+        color: $base-color;
+      }
+    }
+  }
+}
+.menu-open ~ .nav-content {
+  width: 100%;
+}
+
+// FRONT PAGE VIEW //
+.front-view {
+  // margin: 10rem 5rem 20rem 15rem;
+  justify-content: space-evenly;
+
+  .txt-beside-picture {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    text-align: center;
+    width: 570px;
+    height: 200px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .too-hot-wrap {
+    .too-hot-txt {
+      width: 505px;
+      height: 80px;
+      font-size: 64px;
+      line-height: 150px;
+    }
+    .tp-picture {
+      width: 448px;
+      height: 654px;
+    }
+  }
+}
+
+// COOKIE BANNER //
+.cookie-banner {
+  width: 845px;
+  height: 532px;
+  top: 53%;
+  left: 50%;
+  margin-top: -225px;
+  margin-left: -420px;
+
+  .fire-svg {
+    margin: 1rem;
+    width: 104px;
+    height: 97px;
+  }
+
+  .cookie-svg {
+    margin: 1rem;
+    width: 104px;
+    height: 97px;
+  }
+
+  .cookie-banner-heading {
+    font-size: $font-base * 6;
+    margin: 0;
+  }
+
+  .cookie-banner-text {
+    margin: 0;
+    padding: 0.5rem 0 0 0;
+    font-size: $font-base * 3;
+    letter-spacing: -0.05em;
+  }
+
+  .cookie-btn-wrap {
+    padding-top: 5rem;
+
+    .cookie-btn-yes {
+      background-color: $yellow-color;
+      @include desktopBtn();
+    }
+    .cookie-btn-no {
+      background-color: $red-color;
+      @include desktopBtn();
+    }
+  }
+}
+
+// CARDS //
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  margin-top: 30%;
+
+  .product-text {
+    color: $yellow-color;
+    text-align: center;
+    font-family: $font-poppins;
+    font-size: $font-base * 2.5;
+  }
+  .top-cards {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+
+    .left-card {
+      width: 384px;
+      height: 484px;
+      margin: 10px;
+      background-color: $yellow-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+      transition: transform 0.2s;
+    }
+    .left-card:hover {
+      transform: scale(1.2);
+    }
+    .product-img1 {
+      width: 234px;
+      height: 342px;
+      margin-left: 75px;
+      margin-top: 70px;
+    }
+    .right-card {
+      width: 384px;
+      height: 484px;
+      margin: 10px;
+      background-color: $blue-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+      transition: transform 0.2s;
+    }
+    .right-card:hover {
+      transform: scale(1.2);
+    }
+    .product-img2 {
+      width: 234px;
+      height: 342px;
+      margin-left: 75px;
+      margin-top: 70px;
+    }
+  }
+  .bottom-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.2em;
+    gap: 3.5rem;
+
+    .leftBottom-card {
+      width: 384px;
+      height: 484px;
+      margin: 10px;
+      background-color: $blue-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+      transition: transform 0.2s;
+    }
+    .leftBottom-card:hover {
+      transform: scale(1.2);
+    }
+    .product-img3 {
+      width: 234px;
+      height: 342px;
+      margin-left: 75px;
+      margin-top: 70px;
+    }
+    .rightBottom-card {
+      width: 384px;
+      height: 484px;
+      margin: 10px;
+      background-color: $yellow-color;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
+      transition: transform 0.2s;
+    }
+    .rightBottom-card:hover {
+      transform: scale(1.2);
+    }
+    .product-img4 {
+      width: 234px;
+      height: 342px;
+      margin-left: 75px;
+      margin-top: 70px;
+    }
+  }
+}
+
+// FOOTER //
+footer {
+  .social-links {
+    i {
+      font-size: $font-base * 3.5;
+      margin: 0 0.6rem;
+    }
+  }
+
+  .form-sub {
+    label {
+      font-size: $font-base * 2;
+    }
+
+    .sub-input {
+      width: 493px;
+
+      input {
+        font-size: $font-base * 1.25;
+      }
+
+      button {
+        width: 70px;
+        padding: 0;
+
+        i {
+          font-size: $font-base * 2;
+        }
+      }
+    }
+  }
+}
