@@ -10,3 +10,9 @@ Vi har valt att designa en hemsida om Tyrkisk Peber även fast Frida inte tycker
 Jokes aside, Tyrkisk Peber har ingen dedikerad hemsida till deras produkt och vi anser att Tyrkisk Peber förtjänar det(förutom Frida).
 Vi har utgått från deras originella färger(Blå, gul och röd) och även använt oss av vit färg som sekundär.
 Val av typsnitt och annan design har vi gått på vad som "känns" som Tyrkisk Peber och försökt efterlikna deras originaldesign.
+
+
+# Code team "justeringar"
+
+Knappen till mejlinput var inte tillgänglig så vi gjorde den större.
+Vi la till en boxshadow på hamburgarmenyn så att den syns mot den gula bakgrunden.
