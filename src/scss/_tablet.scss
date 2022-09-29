@@ -1,8 +1,7 @@
-// body {
-//   font-family: "Passion One", sans-serif;
-//   background-image: url(/assets/svg/background.svg);
-//   background-size: cover;
-// }
+body {
+  background-image: url(/src/assets/svg/background.svg);
+}
+
 // HEADER //
 header {
   .logo-svg {
@@ -21,6 +20,7 @@ header {
     .burger {
       width: 96px;
       height: 13px;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
     }
   }
 
@@ -30,6 +30,16 @@ header {
     top: -15px;
     margin: 0;
   }
+
+  .content-wrap{
+    height: 495px;
+
+    li {
+    a{
+    font-size: $font-base * 3;
+  }
+}
+}
 }
 
 // FRONT PAGE VIEW //
@@ -47,6 +57,9 @@ header {
     font-size: 20px;
     line-height: 30px;
   }
+
+  .too-hot-wrap {
+
   .too-hot-txt {
     display: flex;
     width: 254px;
@@ -57,8 +70,9 @@ header {
     height: 338px;
   }
 }
-///COOKIE BANNER///
+}
 
+//COOKIE BANNER//
 .cookie-banner {
   width: 700px;
   height: 450px;
@@ -68,17 +82,23 @@ header {
   margin-top: -225px;
   margin-left: -360px;
 
+  .fire-svg {
+    margin: 1.2rem 0 0 0;
+    width: 88px;
+    height: 81px;
+  }
+
   .cookie-svg {
     margin: 1.2rem 0 0 0;
     width: 88px;
     height: 81px;
   }
 
-  .cookie-banner__heading {
+  .cookie-banner-heading {
     margin: 2rem 0;
   }
 
-  .cookie-banner__text {
+  .cookie-banner-text {
     padding: 2rem 0;
     width: 551px;
   }
@@ -87,12 +107,12 @@ header {
     padding-top: 2rem;
     justify-content: space-around;
 
-    .cookie-btn__yes {
+    .cookie-btn-yes {
       background-color: $yellow-color;
       width: 133px;
       height: 62px;
     }
-    .cookie-btn__no {
+    .cookie-btn-no {
       background-color: $red-color;
       width: 133px;
       height: 62px;
@@ -117,28 +137,30 @@ header {
     gap: 3.5rem;
 
     .left-card {
-      width: 200px;
-      height: 245px;
+      width: 230px;
+      height: 285px;
       margin: 10px;
       background-color: $yellow-color;
       box-shadow: 0px 0px 25px 5px $color-shadow;
     }
     .product-img1 {
-      width: 120px;
+      width: 149px;
+      height: 218px ;
       margin-left: 40px;
-      margin-top: 35px;
+      margin-top: 30px;
     }
     .right-card {
-      width: 200px;
-      height: 245px;
+      width: 230px;
+      height: 285px;
       margin: 10px;
       background-color: $blue-color;
       box-shadow: 0px 0px 25px 5px $color-shadow;
     }
     .product-img2 {
-      width: 120px;
+      width: 150px;
+      height: 220px ;
       margin-left: 40px;
-      margin-top: 35px;
+      margin-top: 30px;
     }
   }
   .bottom-cards {
@@ -147,34 +169,39 @@ header {
     gap: 3.5rem;
 
     .leftBottom-card {
-      width: 200px;
-      height: 245px;
+      width: 230px;
+      height: 285px;
       margin: 10px;
       background-color: $blue-color;
       box-shadow: 0px 0px 25px 5px $color-shadow;
     }
     .product-img3 {
-      width: 135px;
-      margin-left: 35px;
-      margin-top: 35px;
+      width: 150px;
+      height: 220px;
+      margin-left: 40px;
+      margin-top: 30px;
     }
     .rightBottom-card {
-      width: 200px;
-      height: 245px;
+      width: 230px;
+      height: 285px;
       margin: 10px;
       background-color: $yellow-color;
       box-shadow: 0px 0px 25px 5px $color-shadow;
     }
     .product-img4 {
-      width: 122px;
+      width: 156px;
+      height: 221px ;
       margin-left: 40px;
-      margin-top: 35px;
+      margin-top: 30px;
     }
   }
 }
 
+// FOOTER //
 footer {
   .social-links {
+    margin-bottom: 0;
+
     i {
       font-size: $font-base * 2.375;
     }
@@ -186,22 +213,12 @@ footer {
     }
 
     .sub-input {
-      height: 30px;
       width: 315px;
 
-      input {
-        font-size: $font-base * 0.75;
-      }
-
       button {
-        width: 45px;
-        height: 30px;
-
-        i {
-          font-size: $font-base * 1.5;
-          width: 45px;
-          height: 30px;
-        }
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0; //prevent shrink
       }
     }
   }

@@ -39,16 +39,18 @@ function checkEmail() {
       btn.style.backgroundColor = "#ffd707";
     } else {
       btn.style.backgroundColor = "#000fa0";
-      input.value = "";
+      alert("Du har inte fyllt i korrekt, testa igen.")
     }
   });
 }
 
 //animation candy on cookie-banner
-gsap.to(".cookie-svg", {
-  duration: 1,
-  fill: "#000",
-  transformOrigin: "60% 60%",
-  rotation: 360,
-  repeat: 0,
-});
+
+// Animation on SVG candy making it spin
+gsap.to(".cookie-svg", {duration: 1, repeatDelay: 1, repeat:50, rotation: 360, ease:"myWiggle"})
+
+// Animation on SVG fire making it shoot out
+
+gsap.to(".fire-svg", {duration: 1, delay: 1, repeatDelay: 1, y: "-50%", x: "50%", ease: "rough", repeat: 50,})
+
+gsap.from(".fire-svg", {duration: 1, delay: 1, repeatDelay:1, opacity: 0, repeat: 50 })

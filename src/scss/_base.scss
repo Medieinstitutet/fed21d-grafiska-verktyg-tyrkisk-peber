@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(/src/assets/svg/background.svg);
+  background-image: url(/src/assets/svg/background-mobile.svg);
   background-size: cover;
 }
 
@@ -157,6 +157,12 @@ main {
     font-style: normal;
     line-height: 18px;
   }
+
+  .too-hot-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
   .too-hot-txt {
     display: flex;
     width: 126px;
@@ -172,6 +178,7 @@ main {
     width: 116px;
     height: 169px;
   }
+}
 }
 
 // COOKIE BANNER//
@@ -190,22 +197,31 @@ main {
   border-radius: 10px;
   font-size: $font-base * 1.5;
 
+  .fire-svg {
+    width: 68px;
+    height: 63px;
+    background-image: url(/src/assets/svg/fire.svg);
+    background-size: cover;
+    transform: rotatez(45deg);
+    position: absolute;
+    z-index: 0;
+  }
+
   .cookie-svg {
     margin: 0.5rem;
     width: 68px;
     height: 63px;
-    // background-image: url(/src/assets/svg/peber.svg);
     background-image: url(/src/assets/svg/peber.svg);
     background-size: cover;
   }
 
-  .cookie-banner__heading {
+  .cookie-banner-heading {
     font-weight: 400;
     margin: 0 0 1rem 0;
     font-family: $font-passion;
     font-size: $font-base * 2.5;
   }
-  .cookie-banner__text {
+  .cookie-banner-text {
     font-weight: 400;
     margin: 1rem 0;
     text-align: center;
@@ -217,16 +233,17 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    .cookie-btn__yes {
+    .cookie-btn-yes {
       background-color: $yellow-color;
       @include mobileBtn();
     }
-    .cookie-btn__no {
+    .cookie-btn-no {
       background-color: $red-color;
       @include mobileBtn();
     }
   }
-  // display: none;
+  
+//display: none;
 }
 
 // CARDS //
@@ -234,6 +251,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-bottom: 5rem;
+  margin-top: 7rem;
 
   .product-text {
     color: $yellow-color;
@@ -254,7 +272,9 @@ main {
       box-shadow: 0px 0px 25px 5px $color-shadow;
     }
     .product-img1 {
-      margin-left: 29px;
+      width: 89px;
+      height: 127px;
+      margin-left: 26px;
       margin-top: 25px;
     }
     .right-card {
@@ -265,7 +285,9 @@ main {
       box-shadow: 0px 0px 25px 5px $color-shadow;
     }
     .product-img2 {
-      margin-left: 29px;
+      width: 89px;
+      height: 127px;
+      margin-left: 26px;
       margin-top: 25px;
     }
   }
@@ -280,9 +302,12 @@ main {
       margin: 10px;
       background-color: $blue-color;
       box-shadow: 0px 0px 25px 5px $color-shadow;
+
     }
     .product-img3 {
-      margin-left: 23px;
+      width: 89px;
+      height: 127px;
+      margin-left: 26px;
       margin-top: 25px;
     }
     .rightBottom-card {
@@ -293,7 +318,9 @@ main {
       box-shadow: 0px 0px 25px 5px $color-shadow;
     }
     .product-img4 {
-      margin-left: 29px;
+      width: 89px;
+      height: 127px;
+      margin-left: 26px;
       margin-top: 25px;
     }
   }
@@ -308,9 +335,10 @@ footer {
   color: $base-color;
 
   .social-links {
-    margin: 0 0 0 0.5rem;
+    margin: 0 0 0.7rem 0.5rem;
     display: flex;
     align-items: flex-end;
+
     i {
       cursor: pointer;
       padding: 0;
@@ -330,7 +358,6 @@ footer {
     }
 
     .sub-input {
-      height: 20px;
       width: 210px;
       background-color: $blue-color;
       border: 1px $yellow-color solid;
@@ -346,13 +373,15 @@ footer {
         padding: 0 0 0 5px;
         background-color: $blue-color;
         text-transform: uppercase;
-        font-size: $font-base * 0.5;
+        font-size: $font-base * 0.7;
         border: none;
         width: 100%;
+        height: 48px; //min size for mobile
       }
 
       button {
-        width: 30px;
+        width: 48px; //min size for mobile
+        height: 48px; //min size for mobile
         cursor: pointer;
         background-color: $blue-color;
         border-left: 1px solid $yellow-color;
@@ -360,12 +389,12 @@ footer {
         border-bottom: none;
         border-top: none;
         margin: 0;
-        padding: 0;
+        padding: 10px;
+        flex-shrink: 0;
 
         i {
+          font-size: $font-base * 1.5;
           color: $text-color;
-          width: 20px;
-          height: 17px;
         }
       }
     }
