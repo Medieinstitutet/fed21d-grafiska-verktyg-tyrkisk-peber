@@ -1,7 +1,6 @@
-// body {
-//   background-image: url(/assets/svg/background.svg);
-//   background-size: cover;
-// }
+body {
+  background-image: url(/src/assets/svg/background.svg);
+}
 
 // HEADER //
 header {
@@ -21,6 +20,7 @@ header {
     .burger {
       width: 96px;
       height: 13px;
+      box-shadow: 0px 0px 25px 5px $color-shadow;
     }
   }
 
@@ -30,6 +30,16 @@ header {
     top: -15px;
     margin: 0;
   }
+
+  .content-wrap{
+    height: 495px;
+
+    li {
+    a{
+    font-size: $font-base * 3;
+  }
+}
+}
 }
 
 // FRONT PAGE VIEW //
@@ -47,6 +57,9 @@ header {
     font-size: 20px;
     line-height: 30px;
   }
+
+  .too-hot-wrap {
+
   .too-hot-txt {
     display: flex;
     width: 254px;
@@ -56,6 +69,7 @@ header {
     width: 232px;
     height: 338px;
   }
+}
 }
 
 //COOKIE BANNER//
@@ -68,17 +82,23 @@ header {
   margin-top: -225px;
   margin-left: -360px;
 
+  .fire-svg {
+    margin: 1.2rem 0 0 0;
+    width: 88px;
+    height: 81px;
+  }
+
   .cookie-svg {
     margin: 1.2rem 0 0 0;
     width: 88px;
     height: 81px;
   }
 
-  .cookie-banner__heading {
+  .cookie-banner-heading {
     margin: 2rem 0;
   }
 
-  .cookie-banner__text {
+  .cookie-banner-text {
     padding: 2rem 0;
     width: 551px;
   }
@@ -87,18 +107,17 @@ header {
     padding-top: 2rem;
     justify-content: space-around;
 
-    .cookie-btn__yes {
+    .cookie-btn-yes {
       background-color: $yellow-color;
       width: 133px;
       height: 62px;
     }
-    .cookie-btn__no {
+    .cookie-btn-no {
       background-color: $red-color;
       width: 133px;
       height: 62px;
     }
   }
-  display: none;
 }
 // CARDS //
 .cards-section {

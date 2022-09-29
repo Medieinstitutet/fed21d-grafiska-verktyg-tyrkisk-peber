@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(/src/assets/svg/background.svg);
+  background-image: url(/src/assets/svg/background-mobile.svg);
   background-size: cover;
 }
 
@@ -157,6 +157,12 @@ main {
     font-style: normal;
     line-height: 18px;
   }
+
+  .too-hot-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
   .too-hot-txt {
     display: flex;
     width: 126px;
@@ -172,6 +178,7 @@ main {
     width: 116px;
     height: 169px;
   }
+}
 }
 
 // COOKIE BANNER//
@@ -198,25 +205,23 @@ main {
     transform: rotatez(45deg);
     position: absolute;
     z-index: 0;
-    
   }
 
   .cookie-svg {
     margin: 0.5rem;
     width: 68px;
     height: 63px;
-    // background-image: url(/src/assets/svg/peber.svg);
     background-image: url(/src/assets/svg/peber.svg);
     background-size: cover;
   }
 
-  .cookie-banner__heading {
+  .cookie-banner-heading {
     font-weight: 400;
     margin: 0 0 1rem 0;
     font-family: $font-passion;
     font-size: $font-base * 2.5;
   }
-  .cookie-banner__text {
+  .cookie-banner-text {
     font-weight: 400;
     margin: 1rem 0;
     text-align: center;
@@ -228,16 +233,17 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    .cookie-btn__yes {
+    .cookie-btn-yes {
       background-color: $yellow-color;
       @include mobileBtn();
     }
-    .cookie-btn__no {
+    .cookie-btn-no {
       background-color: $red-color;
       @include mobileBtn();
     }
   }
-  // display: none;
+  
+//display: none;
 }
 
 // CARDS //
@@ -245,6 +251,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-bottom: 5rem;
+  margin-top: 7rem;
 
   .product-text {
     color: $yellow-color;
@@ -295,6 +302,7 @@ main {
       margin: 10px;
       background-color: $blue-color;
       box-shadow: 0px 0px 25px 5px $color-shadow;
+
     }
     .product-img3 {
       width: 89px;

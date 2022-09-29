@@ -39,7 +39,7 @@ function checkEmail() {
       btn.style.backgroundColor = "#ffd707";
     } else {
       btn.style.backgroundColor = "#000fa0";
-      input.value = "";
+      alert("Du har inte fyllt i korrekt, testa igen.")
     }
   });
 }
