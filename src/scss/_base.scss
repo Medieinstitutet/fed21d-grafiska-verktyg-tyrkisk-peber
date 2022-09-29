@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(src/assets/svg/background-mobile.svg);
+  background-image: url(../assets/svg/background-mobile.svg);
   background-size: cover;
 }
 
@@ -18,7 +18,7 @@ header {
   }
 
   .logo-svg {
-    background-image: url(src/assets/svg/TP_logo.svg);
+    background-image: url(../assets/svg/TP_logo.svg);
     height: 61px;
     width: 170px;
     background-size: cover;
@@ -200,7 +200,7 @@ main {
   .fire-svg {
     width: 68px;
     height: 63px;
-    background-image: url(src/assets/svg/fire.svg);
+    background-image: url(../assets/svg/fire.svg);
     background-size: cover;
     transform: rotatez(45deg);
     position: absolute;
@@ -211,7 +211,7 @@ main {
     margin: 0.5rem;
     width: 68px;
     height: 63px;
-    background-image: url(src/assets/svg/peber.svg);
+    background-image: url(../assets/svg/peber.svg);
     background-size: cover;
   }
 
