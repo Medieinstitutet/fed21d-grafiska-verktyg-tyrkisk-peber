@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(/src/assets/svg/background_1920.svg);
+  background-image: url(src/assets/svg/background_1920.svg);
 }
 
 // HEADER //
@@ -32,11 +32,11 @@ header {
   }
   .content-wrap {
     height: 645px;
-   li{
-      a{
+    li {
+      a {
         font-size: $font-base * 4;
       }
-     
+
       a:hover {
         color: $base-color;
       }
@@ -63,8 +63,7 @@ header {
     line-height: 48px;
   }
 
-   .too-hot-wrap {
-
+  .too-hot-wrap {
     .too-hot-txt {
       width: 505px;
       height: 80px;
@@ -75,7 +74,7 @@ header {
       width: 448px;
       height: 654px;
     }
-   }
+  }
 }
 
 // COOKIE BANNER //
@@ -123,7 +122,6 @@ header {
       @include desktopBtn();
     }
   }
-
 }
 
 // CARDS //
@@ -150,7 +148,7 @@ header {
       margin: 10px;
       background-color: $yellow-color;
       box-shadow: 0px 0px 25px 5px $color-shadow;
-      transition: transform .2s;
+      transition: transform 0.2s;
     }
     .left-card:hover {
       transform: scale(1.2);
@@ -167,7 +165,7 @@ header {
       margin: 10px;
       background-color: $blue-color;
       box-shadow: 0px 0px 25px 5px $color-shadow;
-      transition: transform .2s;
+      transition: transform 0.2s;
     }
     .right-card:hover {
       transform: scale(1.2);
@@ -191,10 +189,10 @@ header {
       margin: 10px;
       background-color: $blue-color;
       box-shadow: 0px 0px 25px 5px $color-shadow;
-      transition: transform .2s;
+      transition: transform 0.2s;
     }
     .leftBottom-card:hover {
-     transform: scale(1.2);  
+      transform: scale(1.2);
     }
     .product-img3 {
       width: 234px;
@@ -208,7 +206,7 @@ header {
       margin: 10px;
       background-color: $yellow-color;
       box-shadow: 0px 0px 25px 5px $color-shadow;
-      transition: transform .2s;
+      transition: transform 0.2s;
     }
     .rightBottom-card:hover {
       transform: scale(1.2);

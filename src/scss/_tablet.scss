@@ -1,5 +1,5 @@
 body {
-  background-image: url(/src/assets/svg/background.svg);
+  background-image: url(src/assets/svg/background.svg);
 }
 
 // HEADER //
@@ -31,15 +31,15 @@ header {
     margin: 0;
   }
 
-  .content-wrap{
+  .content-wrap {
     height: 495px;
 
     li {
-    a{
-    font-size: $font-base * 3;
+      a {
+        font-size: $font-base * 3;
+      }
+    }
   }
-}
-}
 }
 
 // FRONT PAGE VIEW //
@@ -59,17 +59,16 @@ header {
   }
 
   .too-hot-wrap {
-
-  .too-hot-txt {
-    display: flex;
-    width: 254px;
-    font-size: 32px;
+    .too-hot-txt {
+      display: flex;
+      width: 254px;
+      font-size: 32px;
+    }
+    .tp-picture {
+      width: 232px;
+      height: 338px;
+    }
   }
-  .tp-picture {
-    width: 232px;
-    height: 338px;
-  }
-}
 }
 
 //COOKIE BANNER//
@@ -145,7 +144,7 @@ header {
     }
     .product-img1 {
       width: 149px;
-      height: 218px ;
+      height: 218px;
       margin-left: 40px;
       margin-top: 30px;
     }
@@ -158,7 +157,7 @@ header {
     }
     .product-img2 {
       width: 150px;
-      height: 220px ;
+      height: 220px;
       margin-left: 40px;
       margin-top: 30px;
     }
@@ -190,7 +189,7 @@ header {
     }
     .product-img4 {
       width: 156px;
-      height: 221px ;
+      height: 221px;
       margin-left: 40px;
       margin-top: 30px;
     }
